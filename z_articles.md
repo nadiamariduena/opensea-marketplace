@@ -140,3 +140,41 @@ lower execution cost, thats called **gas optimisation**,
 <br>
 
 - For ethereum there are also called **Public Testnet** ✋
+  that you can use to deploy your smart contract
+
+<br>
+
+##### Another useful too is a blockchain explorer like [etherscan]()
+
+<br>
+
+## [Etherscan](https://cointelegraph.com/news/what-is-etherscan-and-how-does-it-work)
+
+### What is Etherscan, and how does it work?
+
+> Etherscan is a block explorer and analytics platform that allows you to access details on any Ethereum blockchain transactions that are pending or confirmed.
+
+<br>
+
+- Etherscan is the most trusted tool for navigating through all the public data on the Ethereum blockchain and is sometimes called “Ethplorer.” This data includes transaction data, wallet addresses, smart contracts and much more. **The application is self-contained and is neither sponsored nor administered by the Ethereum Foundation, which is a non-profit organization.**
+
+<br>
+
+##### What is Etherscan used for?
+
+Users can use Etherscan to:
+
+- Calculate Ethereum gas fees with the Etherscan gas tracker
+
+- Lookup and verify smart contracts
+
+- View the crypto assets held in or associated with a public wallet address
+
+- Observe live transactions taking place on the Ethereum blockchain
+
+- Lookup a single transaction made from any Ethereum wallet
+- Discover which smart contracts have a verified source code and security audit
+
+- Keep track of how many smart contracts a user has authorized with their wallet
+
+- Review and revoke access to a wallet for any decentralized applications (DApps)
