@@ -29,7 +29,7 @@
 
 > NFT marketplace rankings and analysis. Find non-fungible token trading volumes, number of traders per NFT marketplace and more key metrics.
 
-[NFT Marketplaces](https://dappradar.com/nft/marketplaces)
+[NFT Marketplaces](https://dappradar.com/nft/marketplaces) ✋
 
 <br>
 
