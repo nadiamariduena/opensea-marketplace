@@ -150,6 +150,10 @@ lower execution cost, thats called **gas optimisation**,
 
 ## [Etherscan](https://cointelegraph.com/news/what-is-etherscan-and-how-does-it-work)
 
+- With Etherscan you can verify that the transaction was **mined** on the blockchain
+
+<br>
+
 ### What is Etherscan, and how does it work?
 
 > Etherscan is a block explorer and analytics platform that allows you to access details on any Ethereum blockchain transactions that are pending or confirmed.
@@ -178,3 +182,40 @@ Users can use Etherscan to:
 - Keep track of how many smart contracts a user has authorized with their wallet
 
 - Review and revoke access to a wallet for any decentralized applications (DApps)
+
+<br>
+<br>
+
+### <u>Another service</u> that you will use is [INFURA](https://infura.io/) which is an API that runs ethereum clients for you.
+
+- its not easy to run ethereum client, so infura is very useful when you want to send a transaction to **mainnet**
+
+<br>
+<br>
+
+### Another thing to mention is testing ⚠️
+
+<br>
+
+- After you deploy a smart contract, you cannot modify its code, **so its very important that you test your contract before deployment**
+
+<br>
+
+#### So with the Truffle & hardhat, you test your smart contracts easily.
+
+If you only have a smart on the blockchain, the only way to interact with it, **is with the command line and that is not user friendly** , that is why we also need to build a **frontend** to let our users **interact with our smart contracts**
+
+<br>
+
+> smart contracts plus the frontend is what we call a **DApp**
+
+<br>
+<br>
+
+## [DApp](https://en.wikipedia.org/wiki/Decentralized_application)
+
+#### Decentralized applications
+
+<br>
+
+Decentralized applications—also known as **"dApps" or "dapps"**—are digital applications that run on a blockchain network of computers instead of relying on a single computer. Because dApps are decentralized, they are free from the control and interference of a single authority.
