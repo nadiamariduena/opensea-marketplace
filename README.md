@@ -1,3 +1,5 @@
+[![Puppycat_pose](https://emoji.gg/assets/emoji/8285-puppycat-pose.png)](https://emoji.gg/emoji/8285-puppycat-pose)
+
 ## Build OpenSea Blockchain Web 3.0 App with Next.js | Sanity.io | thirdweb
 
 #### [check the video tutorial here](https://youtu.be/x3eRXeMB-4k)
@@ -20,4 +22,37 @@
 
 ### Metamask
 
-- To read more about metamask visit my first project with **metamask & and thirweb** 👍
+- To **read more** about metamask visit the first project I made using: [metamask & and thirdweb](https://github.com/nadiamariduena/crypto-punk-clone-react-web3/tree/1-nft-mining-inting-metamask-setup-fake-eth) 👍
+
+##### There you will learn how to connect your metamask with opensea.
+
+<br>
+<br>
+
+<a href="https://emoji.gg/emoji/4035-naruthink"><img src="https://emoji.gg/assets/emoji/4035-naruthink.png" width="64px" height="64px" alt="naruthink"></a>
+
+### In this project once again you will have to set up the newtwork to <u>Rinkeby</u>
+
+<br>
+
+- The **Reason**: ✋
+
+<br>
+
+> **Ethereum Networks** - The Ethereum Main Network (a.k.a Homestead) is considered to be the production environment. This is where real Ether (ETH) can be exchanged, burned, and mined. Also, there are popular public test networks: Ropsten, Göerli, Kovan, and Rinkeby . All of these networks can be accessed via Infura’s API.
+
+<br>
+<br>
+
+### Go to settings to start with the setup
+
+[<img src="./z_img-read/rinkeby-network.gif"/>]()
+
+<br>
+<br>
+
+> ##### Once You choose the network, go to the top and click on the SHOW/HIDE, you will then have to scroll down and click on the toggle: TURN/ON like in the gif, after you turned it ON, go up and choose your "Rinkeby" network as it s now available.
+
+<br>
+
+[<img src="/z_img-read/rinkeby-network3.gif"/>]()
