@@ -18,9 +18,179 @@
 
 # 🌈
 
-### 1. Installation
+<br>
 
-[click here to see the installation](./z_installation.md)
+## Installation & configuration
+
+<br>
+
+#### Start by setting up <u>YARN</u>
+
+> Since its the first time I will work with yarn, I must to admit I had some difficulty installing it, anyway I discovered a lot of stuff while looking for a solution.
+
+<br>
+
+#### So what worked for me in the end:
+
+<br>
+
+```javascript
+npm install yarn
+```
+
+#### then
+
+```javascript
+//the one i used ✋
+npx create-next-app@latest -e with-tailwindcss opensea-blockchain-clone
+//-------------------------------------------
+//
+
+```
+
+<br>
+
+#### Result
+
+```javascript
+Downloading files for example with-tailwindcss. This might take a moment.
+
+Installing packages. This might take a couple of minutes.
+
+npm does not support Node.js v15.6.0
+You should probably upgrade to a newer version of node as we
+can't make any promises that npm will work with this version.
+You can find the latest version at https://nodejs.org/
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'postcss-js@4.0.0',
+npm WARN EBADENGINE   required: { node: '^12 || ^14 || >= 16' },
+npm WARN EBADENGINE   current: { node: 'v15.6.0', npm: '8.5.3' }
+npm WARN EBADENGINE }
+
+added 116 packages in 2m
+
+Initialized a git repository.
+
+Success! Created opensea-marketplace at /home/dci-st119/Documents/3D-UNITY-BLENDER-REACTVR-ALL/A_REACT_interme/CRYPTO-NFT/opensea-marketplace
+Inside that directory, you can run several commands:
+
+  npm run dev
+    Starts the development server.
+
+  npm run build
+    Builds the app for production.
+
+  npm start
+    Runs the built app in production mode.
+
+We suggest that you begin by typing:
+
+  cd opensea-marketplace
+  npm run dev
+
+
+
+```
+
+<br>
+
+<br>
+
+#### But if you want to choose this one:
+
+```javascript
+
+///
+npx create-next-app --example with-tailwindcss with-tailwindcss-app
+# or
+yarn create next-app --example with-tailwindcss with-tailwindcss-app
+```
+
+<br>
+
+### result:
+
+```javascript
+npm does not support Node.js v15.6.0
+You should probably upgrade to a newer version of node as we
+can't make any promises that npm will work with this version.
+You can find the latest version at https://nodejs.org/
+Need to install the following packages:
+  create-next-app@latest
+Ok to proceed? (y) ✋
+```
+
+#### ✋ type <u>y</u> (to the question in the code above), then click enter
+
+<br>
+
+#### result
+
+```javascript
+Creating a new Next.js app in /home/dci-st119/Documents/3D-UNITY-BLENDER-REACTVR-ALL/A_REACT_interme/CRYPTO-NFT/opensea-blockchain-clone.
+
+Downloading files for example with-tailwindcss. This might take a moment.
+
+Installing packages. This might take a couple of minutes.
+
+npm does not support Node.js v15.6.0
+You should probably upgrade to a newer version of node as we
+can't make any promises that npm will work with this version.
+You can find the latest version at https://nodejs.org/
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'postcss-js@4.0.0',
+npm WARN EBADENGINE   required: { node: '^12 || ^14 || >= 16' },
+npm WARN EBADENGINE   current: { node: 'v15.6.0', npm: '8.5.3' }
+npm WARN EBADENGINE }
+
+added 116 packages in 17s
+
+Initialized a git repository.
+
+Success! Created opensea-blockchain-clone at /home/dci-st119/Documents/3D-UNITY-BLENDER-REACTVR-ALL/A_REACT_interme/CRYPTO-NFT/opensea-blockchain-clone
+Inside that directory, you can run several commands:
+
+  npm run dev
+    Starts the development server.
+
+  npm run build
+    Builds the app for production.
+
+  npm start
+    Runs the built app in production mode.
+
+We suggest that you begin by typing:
+
+  cd opensea-blockchain-clone
+  npm run dev
+
+
+```
+
+ <br>
+ <br>
+
+---
+
+ <br>
+
+# Git 🍨
+
+##### To save the repo, do as always but instead of:
+
+```javascript
+// before
+git push -u origin master
+//
+//
+
+// after
+git push -u origin main
+```
+
+<br>
+
+- then you can continue to use the **git push** as usual
 
 <br>
 <br>
@@ -28,257 +198,78 @@
 ---
 
 <br>
+ <br>
 
-### 2. Next thing we need to do, is set up the database with [SANITY.IO](https://javascript.plainenglish.io/what-is-sanity-io-c0a58d66342f)
+# 🐖
 
-<br>
-
-- When you start a new project on Sanity.io, you'll get access to the real-time datastore. This is a schemaless backend that lets you store and query JSON documents, and subscribe to real-time changes.
-
-<br>
-
-- Sanity Studio is the place where you edit and manage your content. Sanity Studio is an open-source CMS that connects to Sanity. io's datastore. It's a single page application written in React and published on npm
+### Install extensions
 
 <br>
 
-# ✋ [SANITY.IO](https://javascript.plainenglish.io/what-is-sanity-io-c0a58d66342f) set up
+> Since we are going to work with **tailwind**, it would be nice to have the follwing extension to make things easy.
 
 <br>
 
-- Type the following command ⚠️ **without** promo
-
-```javascript
-// If you want to get free sanity stuff, DONT ⚠️ do this one as it doesnt have the reduction deal from the "clever programmer"
-npm install -g @sanity/cli && sanity init
-```
+- go to your extensions inside the **visual studio** and type: tailwind
 
 <br>
 
-## 🔴 Instead use this:
+[<img src="./z_img-read/tailwind-extension.gif"/>]()
 
-```javascript
-// 1
-npm install -g @sanity/cli
+<br>
+<br>
 
-```
+---
+
+<br>
+<br>
+
+# launch 🌈
 
 <br>
 
-#### Once its installed, create a folder in the <u>'root'</u> , call it studio, then <u>cd studio</u> in your visual studio terminal
+#### To launch the server and see the default page in the browser
 
 <br>
 
-- Here you are adding the coupon with free:
+- Instead of typing npm start, do **yarn dev** ✋
 
-> 200.000 api requests and more... [read more here](https://www.sanity.io/freecodecamp) 👾
+<br>
+<br>
 
-```javascript
-
-sanity init --coupon cleverprogrammer
-
-```
+[<img src="./z_img-read/preview-default-launching.gif"/>]()
 
 <br>
 
-#### After that you will be asked to create an account (if you dont have), choose with the arrows then click enter
+### Change the type of the file:
+
+[<img src="./z_img-read/preview-default-launching-0.gif"/>]()
 
 <br>
 
-- result ✋
+#### As you can notice, we have a typescript setup, but here below you can change it to jsx if you want(of course you need to change the type of the file like in the img above).
 
 <br>
 
 ```javascript
-npm does not support Node.js v15.6.0
-You should probably upgrade to a newer version of node as we
-can't make any promises that npm will work with this version.
-You can find the latest version at https://nodejs.org/
-
-// more data but i will only add the below:
-
-? Project name: opensea-blockchain-clone
-```
-
-<br>
-
-#### After this, keep hiting enter
-
-> ? **Project name**: opensea-blockchain-clone
-
-<br>
-
-#### then it will ask you:
-
-- Type: **Y** for yes
-
-```javascript
-? Use the default dataset configuration? (Y/n
-
-```
-
-<br>
-
-#### then it will ask you :
-
-```javascript
-? Project output path: (/home/dci-st119/Documents/3D-UNIT
-Y-BLENDER-REACTVR-ALL/A_REACT_interme/CRYPTO-NFT/oopensea-
-blockchain-clone/studio)
-```
-
-<br>
-
-#### then it will ask you:
-
-- Select Project template:
-
-- **choose:** <u>Clean project with no predefined schemas</u>
-
-<br>
-
-#### Now it will install a lot of stuff inside the <u> studio </u>
-
-<br>
-
-> ###### ⚠️ To be sure that your project is connected to github, go to your applications settings in [github](https://github.com/settings/applications), and check if you have [Sanity.io](https://www.sanity.io/manage) , also try to log in to your sanity account
-
-<br>
-
-<br>
-
-# 🌈
-
-#### While its loading, go to the .gitignore and modify this:
-
-- delete the slash
-
-```javascript
-// before
-/node_modules
-
 //
-//after
-node_modules
+//
+//before
+import type { NextPage } from 'next'
+import Head from 'next/head'
+import Image from 'next/image'
 
+const Home: NextPage = () => {
+//
+//
+//
+// after
+// import type { NextPage } from 'next'
+import Head from 'next/head'
+import Image from 'next/image'
+
+const Home = () => {
+  return (
 ```
 
-- the reason for this, is because we will have 2 node modules, one on the root and 1 inside the studio. By doing that e will ignore both
-
-<br>
-
-<br>
-<br>
-
-[<img src="./z_img-read/sanity-installation0.gif"/>]()
-
-#### Here you can see that we have 2 node modules
-
-[<img src="./z_img-read/sanity-installation1.gif"/>]()
-
- <br>
- <br>
-
-#### Now that we have successfully installed sanity, lets go to the <u>studio/schemas</u> and add the following:
-
-<br>
-
-- If you notice, its a bit similar to the **MONGODB schema**
-
-<br>
-
-```javascript
-types: schemaTypes.concat([
-  {
-    name: 'users',
-    title: 'Users',
-    type: 'document',
-    fields: [
-      {
-        name: 'userName',
-        title: 'User Name',
-        type: 'string',
-      },
-      {
-        name: 'walletAddress',
-        title: 'Wallet Address',
-        type: 'string',
-      },
-      {
-        name: 'profileImage',
-        title: 'Profile Image',
-        type: 'image',
-      },
-      {
-        name: 'bannerImage',
-        title: 'Banner Image',
-        type: 'image',
-      },
-      {
-        name: 'twitterHandle',
-        title: 'Twitter Handle',
-        type: 'string',
-      },
-      {
-        name: 'igHandle',
-        title: 'Instagram Handle',
-        type: 'string',
-      },
-    ],
-  },
-  {
-    name: 'marketItems',
-    title: 'Market Items',
-    type: 'document',
-    fields: [
-      {
-        name: 'title',
-        title: 'Title',
-        type: 'string',
-      },
-      {
-        name: 'contractAddress',
-        title: 'Contract Address',
-        type: 'string',
-      },
-      {
-        name: 'description',
-        title: 'Description',
-        type: 'string',
-      },
-      {
-        name: 'createdBy',
-        title: 'Created By',
-        type: 'reference',
-        to: [{ type: 'users' }],
-      },
-      {
-        name: 'volumeTraded',
-        title: 'Volume Traded',
-        type: 'number',
-      },
-      {
-        name: 'floorPrice',
-        title: 'Floor Price',
-        type: 'number',
-      },
-      {
-        name: 'owners',
-        title: 'Owners',
-        type: 'array',
-        of: [{ type: 'reference', to: [{ type: 'users' }] }],
-      },
-      {
-        name: 'profileImage',
-        title: 'Profile Image',
-        type: 'image',
-      },
-      {
-        name: 'bannerImage',
-        title: 'Banner Image',
-        type: 'image',
-      },
-    ],
-  },
-])
-/* Your types here! */
-```
+---
