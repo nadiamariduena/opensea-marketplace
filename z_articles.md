@@ -223,4 +223,18 @@ Decentralized applications—also known as **"dApps" or "dapps"**—are digital 
 
 <br>
 
-> The frontend can be a mobile app or a web app but in most cases its a web app. The web app of a **dapp** is 90% like your standard web application with **html**
+> The frontend can be a mobile app or a web app but in most cases its a web app. The web app of a **dapp** is 90% like your standard web application with **html / css / javascript** and optionally a frontendvframework like react. I told you before that we have to know the basics of web development before diving into **blockchain development** , now you understand why.
+
+<br>
+
+#### In your frontend there will be two challenges specific to the blockchain
+
+<br>
+
+<br>
+
+### Integration with the blockchain 🍰
+
+- First: the **integration** with the blockchain, for that developers use a javascript library called webstreet, there is also another one called **ethers**, and the other challenges for your **dapp**, is the integration with your wallet
+
+### integration with your wallet 🍰
