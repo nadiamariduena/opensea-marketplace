@@ -20,9 +20,9 @@
 
 # <a href="https://emoji.gg/emoji/1385-metamask"><img src="https://emoji.gg/assets/emoji/1385-metamask.png" width="64px" height="64px" alt="metamask"></a>
 
-### Metamask
+# Metamask
 
-- To **read more** about metamask visit the first project I made using: [metamask & and thirdweb](https://github.com/nadiamariduena/crypto-punk-clone-react-web3/tree/1-nft-mining-inting-metamask-setup-fake-eth) 👍
+- To **read more** about metamask and thirdweb whole setup, visit the first project I made using: [metamask & and thirdweb](https://github.com/nadiamariduena/crypto-punk-clone-react-web3/tree/1-nft-mining-inting-metamask-setup-fake-eth) 👍
 
 ##### There you will learn how to connect your metamask with opensea.
 
@@ -79,4 +79,8 @@
 <br>
 <br>
 
-### Now you are ready to start the project but we dont have ETH
+#### Now you are ready to start the project but we dont have ETH 💰 this is important because after you connect the metamask to the thirdweb, you are going to get an error 🔴
+
+<br>
+
+- To **read more** about metamask and thirdweb whole setup, visit the first project I made using: [metamask & and thirdweb](https://github.com/nadiamariduena/crypto-punk-clone-react-web3/tree/1-nft-mining-inting-metamask-setup-fake-eth) 👍
