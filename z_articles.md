@@ -60,4 +60,37 @@
 <br>
 
 However **the data is not immutable**, you can change it, **BUT** contrary to a normal program, it costs money to change the data of a smart contract, and the complex the code is, the more money it costs. That's why we always try to simplify the code of a smart contract to
-lower execution cost, thats called **gas optimisation**
+lower execution cost, thats called **gas optimisation**,
+
+<br>
+
+> Also **takes time to change the data of a smart contract**, because you need to mine a transaction which takes about **15 seconds on ethereum**.
+
+<br>
+
+> With a smart contract, you can move money negatively, this is why smart contracts are so powerful, with a normal program you will to integrate a payment service like **paypal or stripe** but you need to have a permission to do this and you are **CONSTRAINED** by the **API**, but with the smart contract you can write any logic you want for moving the money you do what you want.
+
+<br>
+
+## In terms of security 🔴
+
+- Its **Almost impossible to hack the core blockchain protocol**, that means that if a transaction is send to move money from an address to another one, its impossible to hack this and change the recipient address, ⚠️ however if there is a bug in the code of a smart contract, hackers can take advantages of this.
+
+<br>
+
+> That s why when you learn smart contracts developement, its also very important to learn about **smart contracts security** and how to write safe smart contracts
+
+<br>
+
+- There are a couple of programming languages for smart contracts, but the most popular is called **SOLIDITY**, the syntax of solidity **looks like JAVASCRIPT** but its very misleading because the way it works is quite different, is also much more limited compared to **JS**, so developers avoid to do things too complicated in **solidity**
+
+<br>
+
+### A great way to experiment with solidity is to remix and online <u>IDE</u> for solidity
+
+<br>
+
+> **What is an IDE in Crypto?** ✋
+> Simplify smart contracts development with the Integrated Development Environment (IDE) The SettleMint IDE is a powerful tool that simplifies the development and deployment of your blockchain application, turning any developer into a blockchain developer.
+
+##### [Deploy your first Solidity smart contract with Remix IDE](https://www.youtube.com/watch?v=bZKVfXmzRDw)
