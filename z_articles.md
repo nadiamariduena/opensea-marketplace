@@ -266,6 +266,8 @@ Decentralized applications—also known as **"dApps" or "dapps"**—are digital 
 
 # NFT
 
+##### check min 11:29 [How to learn NFT Development for Beginners in 3 steps / ](https://youtu.be/wnK_XKZXa30)
+
 <br>
 
 ### There are 2 parts for the NFT's:
@@ -312,9 +314,19 @@ ERC1155 is a novel token standard that aims to take the best from previous stand
 
 ## Check this 2 videos to know more about (you will be building an app)
 
-> In the first one you will learn how to install **Truffle** and then use it with a basic setup to get you started with small contracts 🔴 , you will also be using **genache**, genache is a simulated **ethereum** blockchain on your computer, genache helps you to test your small contracts locally
+> In the first one you will learn how to install **Truffle** and then use it with a basic setup to get you started with small contracts 🔴 , you will also be using **genache**, genache is a simulated **ethereum** blockchain on your computer, genache helps you to test your small contracts locally. **please check the video below:**
 
 #### [Coding an NFT crypto collectible in 3 days (DAY 1)](https://youtu.be/GAFh2Z5VtgM)
+
+<br>
+
+##### network related
+
+[Switch MetaMask network to any chain 🛠 React.js](https://youtu.be/QTcuJ9rdqME)
+
+<br>
+
+[Ethereum Provider API](https://docs.metamask.io/guide/ethereum-provider.html)
 
 <br>
 
