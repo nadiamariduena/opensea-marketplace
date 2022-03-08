@@ -86,11 +86,25 @@ lower execution cost, thats called **gas optimisation**,
 
 <br>
 
-### A great way to experiment with solidity is to remix and online <u>IDE</u> for solidity
+#### A great way to experiment with solidity is to remix an online <u>IDE</u> for solidity
+
+<br>
+
+## Integrated Development Environment (IDE)
 
 <br>
 
 > **What is an IDE in Crypto?** ✋
-> Simplify smart contracts development with the Integrated Development Environment (IDE) The SettleMint IDE is a powerful tool that simplifies the development and deployment of your blockchain application, turning any developer into a blockchain developer.
+> Simplify smart contracts development with the **Integrated Development Environment (IDE)** The SettleMint IDE is a powerful tool that simplifies the development and deployment of your blockchain application, turning any developer into a blockchain developer.
 
 ##### [Deploy your first Solidity smart contract with Remix IDE](https://www.youtube.com/watch?v=bZKVfXmzRDw)
+
+<br>
+
+#### For the remix, you have nothing to install , you just load the website and you can start writing and running solidity smart contracts.
+
+<br>
+
+#### Remix
+
+- is good to get started but in real life projects developers use something more robust like **Truffle** or **hardhat**
