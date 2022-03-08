@@ -265,3 +265,63 @@ Decentralized applications—also known as **"dApps" or "dapps"**—are digital 
 # 🌈
 
 # NFT
+
+<br>
+
+### There are 2 parts for the NFT's:
+
+- The On-chain
+
+- The Off -chain
+
+<br>
+
+##### For the Onchain part: you will need to create and deploy a smart contract
+
+### ERC
+
+> Erc's are a set of standards for **ethereum smart contracts** , some of this standards like:
+
+**ERC721, ERC1155, ERC20**
+
+> Define token standards, NFT's are represented either as an **ERC721** token or an **ERC1155** token
+
+<br>
+
+### What is an ERC721?
+
+<br>
+
+ERC-721 is an open standard that describes how to build Non-Fungible tokens on EVM (Ethereum Virtual Machine) compatible blockchains; it is a standard interface for Non-Fungible tokens; it has a set of rules which make it easy to work with NFTs:
+
+##### [How to create and deploy an ERC-721 (NFT) ](https://www.quicknode.com/guides/solidity/how-to-create-and-deploy-an-erc-721-nft)
+
+<br>
+
+#### What is an ERC1155?
+
+<br>
+
+ERC1155 is a novel token standard that aims to take the best from previous standards to create a fungibility-agnostic and gas-efficient token contract. ERC1155 draws ideas from all of ERC20, ERC721, and ERC777. If you're unfamiliar with those standards, head to their guides before moving on:
+
+##### ✋ [docs.openzeppelin.com/contracts/3.x/erc1155](https://docs.openzeppelin.com/contracts/3.x/erc1155) ✋
+
+<br>
+
+[![kek_sun](https://emoji.gg/assets/emoji/8456-kek-sun.gif)](https://emoji.gg/emoji/8456-kek-sun)
+
+## Check this 2 videos to know more about (you will be building an app)
+
+> In the first one you will learn how to install **Truffle** and then use it with a basic setup to get you started with small contracts 🔴 , you will also be using **genache**, genache is a simulated **ethereum** blockchain on your computer, genache helps you to test your small contracts locally
+
+#### [Coding an NFT crypto collectible in 3 days (DAY 1)](https://youtu.be/GAFh2Z5VtgM)
+
+<br>
+
+#### [How to implement an ERC721 Token and connect it to OpenSea (DAY 2)](https://www.youtube.com/watch?v=75D0JjX7EZg)
+
+<br>
+
+---
+
+<br>
