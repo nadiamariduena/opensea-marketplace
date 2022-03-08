@@ -213,7 +213,7 @@ If you only have a smart on the blockchain, the only way to interact with it, **
 <br>
 <br>
 
-## [DApp](https://en.wikipedia.org/wiki/Decentralized_application)
+# [DApp](https://en.wikipedia.org/wiki/Decentralized_application)
 
 #### Decentralized applications
 
@@ -238,3 +238,30 @@ Decentralized applications—also known as **"dApps" or "dapps"**—are digital 
 - First: the **integration** with the blockchain, for that developers use a javascript library called webstreet, there is also another one called **ethers**, and the other challenges for your **dapp**, is the integration with your wallet
 
 ### integration with your wallet 🍰
+
+- IN **dapp's** the user management is decentralized and users store their passwords themselves, we don't use passwords in **dapp** but the closest equivalent will be what we call 🔑 **private keys**
+
+<br>
+
+### 🔑 private keys
+
+> **With private keys, user can sign a transaction** which is a data package that describes an action that a user wants to do with a signature that proves that the user really wanted to do this action, there are many ways available for **ethereum** but most people use **metamask**
+
+<br>
+<br>
+
+[![cat_poggers](https://emoji.gg/assets/emoji/1733-cat-poggers.png)](https://emoji.gg/emoji/1733-cat-poggers)
+
+#### Learning blockchain development is probably what will takes you the most time and once you are comfortable with this you can move on to the next part where we will finally deal with NFT's
+
+<br>
+<br>
+
+---
+
+<br>
+<br>
+
+# 🌈
+
+# NFT
