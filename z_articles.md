@@ -113,8 +113,9 @@ lower execution cost, thats called **gas optimisation**,
 - is good to get started but in real life projects developers use something more robust like **Truffle** or **hardhat**
 
 <br>
+<br>
 
-## Truffle & hardhat
+## [Truffle](https://trufflesuite.com/) & [hardhat](https://hardhat.org/)
 
 > Are command lines tools, written in **node.js** and you can install them easily with **npm**
 
@@ -201,13 +202,13 @@ Users can use Etherscan to:
 
 <br>
 
-#### So with the Truffle & hardhat, you test your smart contracts easily.
+#### So with the [Truffle](https://trufflesuite.com/) & [hardhat](https://hardhat.org/), you test your smart contracts easily.
 
 If you only have a smart on the blockchain, the only way to interact with it, **is with the command line and that is not user friendly** , that is why we also need to build a **frontend** to let our users **interact with our smart contracts**
 
 <br>
 
-> smart contracts plus the frontend is what we call a **DApp**
+### ✋ smart contracts plus the frontend is what we call a **DApp** ✋
 
 <br>
 <br>
@@ -219,3 +220,7 @@ If you only have a smart on the blockchain, the only way to interact with it, **
 <br>
 
 Decentralized applications—also known as **"dApps" or "dapps"**—are digital applications that run on a blockchain network of computers instead of relying on a single computer. Because dApps are decentralized, they are free from the control and interference of a single authority.
+
+<br>
+
+> The frontend can be a mobile app or a web app but in most cases its a web app. The web app of a **dapp** is 90% like your standard web application with **html**
