@@ -8,12 +8,49 @@
 
 #### Check this other tutorial for more details on this <u>Topic</u>
 
-[Build your own NFT marketplace like OpenSea clone with solidity,openzeppelin and polygon (SUBSCRIBE)](https://youtu.be/7Q5E6RvLlUw)
+##### [Build your own NFT marketplace like OpenSea clone with solidity,openzeppelin and polygon (SUBSCRIBE)](https://youtu.be/7Q5E6RvLlUw)
 
 <br>
 <br>
 
 ---
+
+<br>
+
+### Interesting articles || links: 🐔
+
+##### How to make money with NFT as a developer?
+
+[How to make money with NFT as a developer?](https://youtu.be/5_Wu_X4LnAw)
+
+<br>
+
+##### NFT Marketplaces
+
+> NFT marketplace rankings and analysis. Find non-fungible token trading volumes, number of traders per NFT marketplace and more key metrics.
+
+[NFT Marketplaces](https://dappradar.com/nft/marketplaces)
+
+<br>
+
+---
+
+<br>
+
+# Login:
+
+#### Login in Metamask : [metamask](https://metamask.io/)
+
+#### Login in ThirdWeb : [Thirdweb](https://bit.ly/3EJLftx)
+
+#### Login [Opensea](https://testnets.opensea.io/)
+
+ <br>
+
+---
+
+<br>
+<br>
 
 <br>
 <br>
@@ -23,6 +60,8 @@
 # Metamask
 
 - To **read more** about metamask and thirdweb whole setup, visit the first project I made using: [metamask & and thirdweb](https://github.com/nadiamariduena/crypto-punk-clone-react-web3/tree/1-nft-mining-inting-metamask-setup-fake-eth) 👍
+
+<br>
 
 ##### There you will learn how to connect your metamask with opensea.
 
