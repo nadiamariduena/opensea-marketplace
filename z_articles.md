@@ -31,7 +31,7 @@
 
 <br>
 
-## Smart Contracts :rainbow:
+# Smart Contracts :rainbow:
 
 <br>
 
@@ -89,8 +89,11 @@ lower execution cost, thats called **gas optimisation**,
 #### A great way to experiment with solidity is to remix an online <u>IDE</u> for solidity
 
 <br>
+<br>
 
-## Integrated Development Environment (IDE)
+# IDE
+
+### Integrated Development Environment
 
 <br>
 
@@ -108,3 +111,24 @@ lower execution cost, thats called **gas optimisation**,
 #### Remix
 
 - is good to get started but in real life projects developers use something more robust like **Truffle** or **hardhat**
+
+<br>
+
+## Truffle & hardhat
+
+> Are command lines tools, written in **node.js** and you can install them easily with **npm**
+
+<br>
+
+> BOth of them come with a local blockchain network for development. Blockchain network is very convenient for development, because you can deploy your smart contract on your network completely separated from the real network of
+> ethereum that we call **Mainnet**
+
+<br>
+
+### Mainnet
+
+> Mainnet is the term used to describe when a blockchain protocol is fully developed and deployed, meaning that cryptocurrency transactions are being broadcasted, verified, and recorded on a distributed ledger technology (blockchain). [Read more: Mainnet](https://academy.binance.com/en/glossary/mainnet)
+
+<br>
+
+- **In contrast to mainnet networks, the term testnet describes when a blockchain protocol or network is not yet up and running on its full capacity**. A testnet is used by programmers and developers to test and troubleshoot all the aspects and features of a blockchain network before they are sure the system is secure and ready for the mainnet launch.
