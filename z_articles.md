@@ -23,7 +23,7 @@
 <br>
 <br>
 
-> **Blockchain application development** even if you will not develop blockchain code technologies, you will need to have an understanding of the **basics of how blockchain work** and specially ethereum, you will need to learn a few things like the **Proof of work algorithm or POW algorithm**, what is the data structure of the ethereum blockchain, what are public and private keys, how addresses are generated, and the 2 kind of addresses that exist on ethereum, how a wallet work, so that's an external software that manages the private key of each user, what is a **transaction** and how you can change the data inside the ethereum and what is a **SMART CONTRACT**.
+> **Blockchain application development** even if you will not develop blockchain code technologies, you will need to have an understanding of the **basics of how blockchain work** and specially ethereum, you will need to learn a few things like the **Proof of work algorithm or POW algorithm**, what is the data structure of the ethereum blockchain, what are public and private keys, how addresses are generated, and the 2 kind of **addresses that exist on ethereum**, how a wallet work, so that's an external software that manages the **private key of each user**, what is a **transaction** and how you can change the data inside the ethereum and what is a **SMART CONTRACT**.
 
 <br>
 
@@ -32,3 +32,32 @@
 <br>
 
 ## Smart Contracts :rainbow:
+
+<br>
+
+- Smart contracts are small programs that live in the blockchain, usually they are quite small, perhaps a few hundred or thousand lines of code, rarely more. These programs are very different from normal programs, once they are deployed you cannot change the code, we call that: an **immutable code** .
+
+#### Immutable Code✋
+
+> Smart contracts are immutable once deployed, which is good for trust but also means that bugs in the code will be much more difficult to deal with.
+
+<br>
+
+#### [read more | ethereum.org](https://ethereum.org/en/smart-contracts/)
+
+<br>
+
+#### Tutorial
+
+###### [Build Your First Blockchain App Using Ethereum Smart Contracts and Solidity](https://youtu.be/coQ5dg8wM2o)
+
+<br>
+
+<br>
+
+#### Not immutable✋
+
+<br>
+
+However **the data is not immutable**, you can change it, **BUT** contrary to a normal program, it costs money to change the data of a smart contract, and the complex the code is, the more money it costs. That's why we always try to simplify the code of a smart contract to
+lower execution cost, thats called **gas optimisation**
