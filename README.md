@@ -56,3 +56,27 @@
 <br>
 
 [<img src="/z_img-read/rinkeby-network3.gif"/>]()
+
+<br>
+<br>
+
+## Connect to a Wallet
+
+<br>
+
+#### Once you choose to connect to metamask, choose the test account you just created.
+
+⚠️ warning It will ask you to continue, but before check that your ETH is in Rinkeby, then choose Rinkeby again
+
+<br>
+
+- **After that you will have a successful message** and then it will ask you to **create a first project on Rinkeby**
+
+<br>
+
+[<img src="./z_img-read/connect-to-rinkeby.gif"/>]()
+
+<br>
+<br>
+
+### Now you are ready to start the project but we dont have ETH
