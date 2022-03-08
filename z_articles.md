@@ -132,3 +132,11 @@ lower execution cost, thats called **gas optimisation**,
 <br>
 
 - **In contrast to mainnet networks, the term testnet describes when a blockchain protocol or network is not yet up and running on its full capacity**. A testnet is used by programmers and developers to test and troubleshoot all the aspects and features of a blockchain network before they are sure the system is secure and ready for the mainnet launch.
+
+<br>
+
+#### On this local blockchain network you can have infinite fake ether, which mean you can send as many transactions as you want, lose all the money, it doesnt matter at all.
+
+<br>
+
+- For ethereum there are also called **Public Testnet** ✋
