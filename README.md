@@ -274,3 +274,14 @@ Content Studio successfully compiled! Go to http://localhost:3345
 <br>
 
 [<img src="./z_img-read/lauch-sanity2.gif"/>]()
+
+<br>
+<br>
+
+### Once you sign in you will notice that we have no users, so create a user
+
+- Since I already clicked, I only have to edit it
+
+<br>
+
+[<img src="./z_img-read/basic-sanity-setup-end.gif"/>]()
