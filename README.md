@@ -234,3 +234,32 @@
 - Once the nft have been created, list them like in the gif below
 
 [<img src="./z_img-read/nft-listing.gif"/>]()
+
+<br>
+<br>
+
+### For now everything is done, but before continuing, lets check if everything is working right with sanity.io
+
+<br>
+
+- ✋ Make sure you are inside the **studio** folder in your console:
+
+<br>
+
+[<img src="./z_img-read/lauch-sanity1.gif"/>]()
+
+<br>
+
+#### then type the following: sanity start ✋
+
+<br>
+
+- Wait until it compiles, then you should have this:
+
+```javascript
+✔ Checking configuration files...
+⠙ Compiling...webpack built 91931173cd6cf96b911c in 28147ms
+✔ Compiling...
+Content Studio successfully compiled! Go to http://localhost:3333
+
+```
