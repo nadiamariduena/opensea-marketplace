@@ -126,6 +126,8 @@
 
 #### Get [free & fake ethereum faucets:](https://faucets.chain.link/rinkeby)
 
+> Everytime you need more eth, you can request a new payment ✋.
+
 <br>
 <br>
 
@@ -135,6 +137,12 @@
 <br>
 
 ### Now that you have your fake ethereum, create a new project
+
+<br>
+
+### Create a new project
+
+<br>
 
 - Choose the testnet **Rinkeby**
 
@@ -147,15 +155,19 @@
 <br>
 <br>
 
-### Add a new module
+### Create a Market place
 
-- This time we will not choose the NFT COLLECTION **but** the **SETUP MARKETPLACE** ✋
+<br>
+
+- Add the **new module** and then create a **marketplace**
 
 <br>
 
 > It went a bit too fast when choosing, but i took the **marketplace**
 
 [<img src="./z_img-read/creating-a-marketplace.gif"/>]()
+
+<br>
 
 ### Royalty
 
