@@ -59,11 +59,9 @@
 
 # Metamask
 
-- To **read more** about metamask and thirdweb whole setup, visit the first project I made using: [metamask & and thirdweb](https://github.com/nadiamariduena/crypto-punk-clone-react-web3/tree/1-nft-mining-inting-metamask-setup-fake-eth) 👍
+- **CHECK THE ENTIRE setup** , visit the first project I made using: [metamask & and thirdweb](https://github.com/nadiamariduena/crypto-punk-clone-react-web3/tree/1-nft-mining-inting-metamask-setup-fake-eth) 🔴
 
-<br>
-
-##### There you will learn how to connect your metamask with opensea.
+> There you will learn how to connect your metamask with opensea.
 
 <br>
 <br>
@@ -118,8 +116,51 @@
 <br>
 <br>
 
-#### Now you are ready to start the project but we dont have ETH 💰 this is important because after you connect the metamask to the thirdweb, you are going to get an error 🔴
+#### Now you are ready to start the project but we dont have ETH 💰 this is important because after you connect the metamask to the thirdweb, you are going to get an error
 
 <br>
 
-- To **read more** about metamask and thirdweb whole setup, visit the first project I made using: [metamask & and thirdweb](https://github.com/nadiamariduena/crypto-punk-clone-react-web3/tree/1-nft-mining-inting-metamask-setup-fake-eth) 👍
+- To **read more** about metamask and thirdweb whole setup, visit the first project I made using: [metamask & and thirdweb](https://github.com/nadiamariduena/crypto-punk-clone-react-web3/tree/1-nft-mining-inting-metamask-setup-fake-eth) 🔴
+
+<br>
+
+#### Get [free & fake ethereum faucets:](https://faucets.chain.link/rinkeby)
+
+<br>
+<br>
+
+---
+
+<br>
+<br>
+
+### Now that you have your fake ethereum, create a new project
+
+- Choose the testnet **Rinkeby**
+
+- Once you click okay, it will take a second as its **processing the gaz fees**
+
+<br>
+
+[<img src="./z_img-read/creating-new-project.gif"/>]()
+
+<br>
+<br>
+
+### Add a new module
+
+- This time we will not choose the NFT COLLECTION **but** the **SETUP MARKETPLACE** ✋
+
+<br>
+
+> It went a bit too fast when choosing, but i took the **marketplace**
+
+[<img src="./z_img-read/creating-a-marketplace.gif"/>]()
+
+### Royalty
+
+- Every time it does a transaction, we will get **3% Royalty for it**
+
+<br>
+
+- Once you click okay, it will take a second as its **processing the gaz fees**, then it will ask you again as it will process **a second transaction** 💰
