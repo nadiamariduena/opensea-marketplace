@@ -199,3 +199,11 @@
 - Add module and choose <u>NFT collection</u>
 
 [<img src="./z_img-read/nft-collection.gif"/>]()
+
+<br>
+
+#### For the next step we will need the images
+
+- Download the apes images
+
+[NFT Jpegs](https://drive.google.com/drive/folders/1l3FGAQZcX2QAjU04w1hHkeswuzeINdDP)
