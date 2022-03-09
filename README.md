@@ -217,8 +217,20 @@
 
 <br>
 
-- ⚠️ Dont click twice otherwise you will have duplicates
+- ⚠️ Don't click twice otherwise you will have duplicates
 
 <br>
 
 [<img src="./z_img-read/minting-nft.gif"/>]()
+
+<br>
+
+#### Create at least 4 nfts
+
+<br>
+
+## Nft listing
+
+- Once the nft have been created, list them like in the gif below
+
+[<img src="./z_img-read/nft-listing.gif"/>]()
