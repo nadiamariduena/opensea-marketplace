@@ -176,3 +176,11 @@
 <br>
 
 - Once you click okay, it will take a second as its **processing the gaz fees**, then it will ask you again as it will process **a second transaction** 💰
+
+<br>
+
+### Collaborators
+
+- If you want to add other collaborators, just add their id in the input below yours.
+
+[<img src="./z_img-read/collaborators-option.webp"/>]()
