@@ -140,7 +140,7 @@
 
 <br>
 
-### Create a new project
+### Create a new project 😎
 
 <br>
 
@@ -155,7 +155,9 @@
 <br>
 <br>
 
-### Create a Market place
+### Create a Market place 😎
+
+[see more here / min 15:25](https://youtu.be/x3eRXeMB-4k)
 
 <br>
 
@@ -184,3 +186,16 @@
 - If you want to add other collaborators, just add their id in the input below yours.
 
 [<img src="./z_img-read/collaborators-option.webp"/>]()
+
+<br>
+
+#### Since we just finished creating the marketplace, lets continue with the creation of the <u> NFT collection</u>
+
+<br>
+<br>
+
+### Create the NFT collection 😎
+
+- Add module and choose <u>NFT collection</u>
+
+[<img src="./z_img-read/nft-collection.gif"/>]()
