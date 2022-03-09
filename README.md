@@ -260,6 +260,17 @@
 ✔ Checking configuration files...
 ⠙ Compiling...webpack built 91931173cd6cf96b911c in 28147ms
 ✔ Compiling...
-Content Studio successfully compiled! Go to http://localhost:3333
+Content Studio successfully compiled! Go to http://localhost:3345
 
 ```
+
+<br>
+<br>
+
+#### Now type http://localhost:3345 in your browser
+
+- it will launch sanity in your desktop
+
+<br>
+
+[<img src="./z_img-read/lauch-sanity2.gif"/>]()
