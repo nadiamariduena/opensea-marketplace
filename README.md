@@ -207,3 +207,18 @@
 - Download the apes images
 
 [NFT Jpegs](https://drive.google.com/drive/folders/1l3FGAQZcX2QAjU04w1hHkeswuzeINdDP)
+
+<br>
+<br>
+
+### Start minting the NFTs
+
+- Add the images, the names (can be a name or an ide like this: #2312), to each.
+
+<br>
+
+- ⚠️ Dont click twice otherwise you will have duplicates
+
+<br>
+
+[<img src="./z_img-read/minting-nft.gif"/>]()
