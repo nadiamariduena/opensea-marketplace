@@ -4,6 +4,8 @@ import Image from 'next/image'
 import openseaLogo from '../assets/opensea.png'
 //icons
 import { AiOutlineSearch } from 'react-icons/ai'
+// import { CgProfile } from 'react-icons'
+// import { MdOutlineAccountBalanceWallet } from 'react-icons'
 //
 
 // Header.js

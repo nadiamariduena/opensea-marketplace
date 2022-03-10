@@ -120,7 +120,11 @@ const style = {
 
 <br>
 
-[<img src="./z_img-read/tailwind-width.gif"/>]()
+[<img src="./z_img-read/tailwind-width.gif"/>](https://youtu.be/4wGmylafgM4?t=734)
+
+<br>
+
+[<img src="./z_img-read/tailwind-width-table.gif"/>](https://tailwindcss.com/docs/width)
 
 <br>
 
