@@ -119,7 +119,7 @@ export default Header
 
 <br>
 
-- CReate the assets folder inside the **root** then go to this link from the tutorial and download the image to your **assets component**
+- CReate the assets folder inside the **root** then go to [this link](https://drive.google.com/drive/folders/1BS_tG_B7kH3pJVBu6KJiLgsk4T2gt9Jr) ✋ from the tutorial and download the image to your **assets component**
 
 ```javascript
 return (
@@ -133,7 +133,9 @@ return (
 )
 ```
 
-#### 🔴 At this point you will have an error
+<br>
+
+### 🔴 At this point you will have an error
 
 ```javascript
 Unhandled Runtime Error
@@ -156,7 +158,23 @@ ReferenceError: Link is not defined
 </Link>
 ```
 
-- 🔴 dont forget to add this, as it will also give you an error if you dont add it: **href="/"**
+<br>
+
+- 🔴 Dont forget to add this: **href="/"**, as it will also give you an error if you dont add it:
+
+<br>
+
+<br>
+
+# Routing
+
+<br>
+
+> Next.js has a file-system based router built on the concept of pages.
+
+#### 👾 When a file is added to the pages directory, it's automatically available as a route. 👾
+
+The files inside the pages directory can be used to define most common patterns.
 
 <br>
 
