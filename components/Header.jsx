@@ -2,7 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import openseaLogo from '../assets/opensea.png'
-//
+//icons
+import { AiOutlineSearch } from 'react-icons/ai'
 //
 
 // Header.js
@@ -30,6 +31,12 @@ const Header = () => {
           <div className={style.logoText}>Opensea</div>
         </div>
       </Link>
+      {/* -------- */}
+      <div className={style.searchBar}>
+        <div className={style.searchIcon}>
+          <AiOutlineSearch />
+        </div>
+      </div>
     </div>
   )
 }

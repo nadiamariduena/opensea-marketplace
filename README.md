@@ -119,7 +119,9 @@ export default Header
 
 <br>
 
-### Now lets import the Image logo
+### Logo 🌵
+
+#### Now lets import the Image logo
 
 <br>
 
@@ -203,7 +205,7 @@ The files inside the pages directory can be used to define most common patterns.
 
 ### Let's continue
 
-#### Inside the logo container, add a text:
+#### Inside the logo container add a text:
 
 ```javascript
 <Link href="/">
@@ -212,3 +214,37 @@ The files inside the pages directory can be used to define most common patterns.
   </div>
 </Link>
 ```
+
+<br>
+
+### Searchbar 🌵
+
+#### Now under the <u>Link</u> , add another div
+
+- This div will nest the **searchbar**
+
+- Install react icons but be careful that you are not inside the **studio** folder when you do it:
+
+```javascript
+// try it with yarn
+yarn add react-icons
+// or try it with npm
+npm i react-icons
+```
+
+<br>
+
+##### You should have something like this:
+
+```javascript
+  "dependencies": {
+    "next": "latest",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1" ✋
+  },
+
+```
+
+<br>
+<br>
