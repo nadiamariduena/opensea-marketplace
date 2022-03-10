@@ -386,7 +386,11 @@ export default Header
 
 ### Add the Router
 
+<br>
+
 - The router is going to give you the option to add access to multiple things, one of these things are the **queries**
+
+<br>
 
 ```javascript
 import React from 'react'
@@ -403,4 +407,20 @@ const collection = () => {
 export default collection
 ```
 
-##### At this point we made the connection, so you will notice that when we click on the collection link, we will see the id code on the browser, that means that we are reaching the page
+<br>
+
+#### At this point we made the connection, so you will notice that when we click on the collection link, we will see the id code on the browser, that means that we are reaching the page with the help of the router
+
+<br>
+
+- **I will make 2 tests to see the differences**, one without the router setup + the query and one with the code **above**
+
+<br>
+
+#### Without router
+
+[<img src="./z_img-read/without-router.gif"/>](https://youtu.be/7J4iL1HDshQ?t=604)
+
+#### With router
+
+[<img src="./z_img-read/withrouter.gif"/>](https://youtu.be/7J4iL1HDshQ?t=604)
