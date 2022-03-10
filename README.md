@@ -355,3 +355,16 @@ export default Header
 <br>
 
 [<img src="./z_img-read/id-collection-page-not-found.gif"/>]()
+
+<br>
+<br>
+
+## Create the collections
+
+- Inside the **pages folder** , create a new folder and call it **collections**, inside the collection folder create a new file and call it: **[collectionid.js]**
+
+<br>
+
+- 🔴 check the video below, it s very well explained.
+
+[<img src="./z_img-read/bracket-variable.gif"/>](https://youtu.be/7J4iL1HDshQ?t=604)
