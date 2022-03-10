@@ -336,3 +336,22 @@ export default Header
 <br>
 
 [<img src="./z_img-read/result-header1.gif"/>]()
+
+<br>
+<br>
+
+#### Now make the collections link functional
+
+- For now we will give the **collection link** the id of our **opensea collection** contract address:
+
+> **0xB4D9B6long code**
+
+[<img src="./z_img-read/id-collection-1.gif"/>]()
+
+<br>
+
+#### Now if you try to click on the collection, it will crash because we dont have the page "collection"
+
+<br>
+
+[<img src="./z_img-read/id-collection-page-not-found.gif"/>]()
