@@ -209,6 +209,8 @@ ReferenceError: Link is not defined
 
 The files inside the pages directory can be used to define most common patterns.
 
+[<img src="./z_img-read/nextjs-routing.gif"/>](https://youtu.be/7J4iL1HDshQ?t=826)
+
 <br>
 
 #### If you are new like me with NEXTJS, check this links about 'Routing':
