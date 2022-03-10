@@ -4,8 +4,8 @@ import Image from 'next/image'
 import openseaLogo from '../assets/opensea.png'
 //icons
 import { AiOutlineSearch } from 'react-icons/ai'
-// import { CgProfile } from 'react-icons'
-// import { MdOutlineAccountBalanceWallet } from 'react-icons'
+import { CgProfile } from 'react-icons/cg'
+import { MdOutlineAccountBalanceWallet } from 'react-icons/md'
 //
 
 // Header.js
@@ -49,6 +49,13 @@ const Header = () => {
         <div className={style.headerItem}> Stats</div>
         <div className={style.headerItem}> Ressources</div>
         <div className={style.headerItem}> Create</div>
+        {/* -- */}
+        <div className={style.headerIcon}>
+          <CgProfile />
+        </div>
+        <div className={style.headerIcon}>
+          <MdOutlineAccountBalanceWallet />
+        </div>
       </div>
     </div>
   )

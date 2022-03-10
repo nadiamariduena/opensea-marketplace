@@ -277,3 +277,62 @@ npm i react-icons
 
 <br>
 <br>
+
+### Import the icons
+
+```javascript
+//icons
+import { AiOutlineSearch } from 'react-icons/ai'
+import { CgProfile } from 'react-icons/cg'
+import { MdOutlineAccountBalanceWallet } from 'react-icons/md'
+//
+```
+
+<br>
+
+#### Use them here:
+
+```javascript
+const Header = () => {
+  return (
+    <div className={style.wrapper}>
+      <Link href="/">
+        <div className={style.logoContainer}>
+          <Image src={openseaLogo} height={40} width={40} />
+          <div className={style.logoText}>Opensea</div>
+        </div>
+      </Link>
+      {/* -------- */}
+      <div className={style.searchBar}>
+        <div className={style.searchIcon}>
+          <AiOutlineSearch /> ✋
+        </div>
+        <input
+          className={style.searchInput}
+          placeholder="Search items, collections, and accounts"
+        />
+      </div>
+      {/* ----------- */}
+      <div className={style.headerItems}>
+        <div className={style.headerItem}> Collections</div>
+        <div className={style.headerItem}> Stats</div>
+        <div className={style.headerItem}> Ressources</div>
+        <div className={style.headerItem}> Create</div>
+        {/* -- */}
+        <div className={style.headerIcon}>
+          <CgProfile /> ✋
+        </div>
+        <div className={style.headerIcon}>
+          <MdOutlineAccountBalanceWallet /> ✋
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default Header
+```
+
+<br>
+
+[<img src="./z_img-read/result-header1.gif"/>]()
