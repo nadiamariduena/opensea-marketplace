@@ -94,3 +94,66 @@ const style = {
   headerIcon: `text-[#8a939b] text-3xl font-black px-4 hover:text-white cursor-pointer`,
 }
 ```
+
+<br>
+
+#### but how do we use it?
+
+```javascript
+const Header = () => {
+  return (
+    <div className={style.wrapper}>
+      <Link>
+        <div className={style.logoContainer}></div>
+      </Link>
+    </div>
+  )
+}
+
+export default Header
+```
+
+<br>
+
+### Now lets import the Image logo
+
+<br>
+
+- CReate the assets folder inside the **root** then go to this link from the tutorial and download the image to your **assets component**
+
+```javascript
+return (
+  <div className={style.wrapper}>
+    <Link>
+      <div className={style.logoContainer}>
+        ✋ <Image src={openseaLogo} height={40} width={40} />
+      </div>
+    </Link>
+  </div>
+)
+```
+
+#### 🔴 At this point you will have an error
+
+```javascript
+Unhandled Runtime Error
+ReferenceError: Link is not defined
+```
+
+#### Solution:
+
+- Import the following:
+
+> import Link from 'next/link'
+
+#### use it like so:
+
+```javascript
+<Link href="/">
+  <div className={style.logoContainer}>
+    <Image src={openseaLogo} height={40} width={40} />
+  </div>
+</Link>
+```
+
+- 🔴 dont forget to add this, as it will also give you an error if you dont add it: **href="/"**
