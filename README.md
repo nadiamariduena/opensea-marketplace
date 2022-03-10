@@ -361,10 +361,25 @@ export default Header
 
 ## Create the collections
 
-- Inside the **pages folder** , create a new folder and call it **collections**, inside the collection folder create a new file and call it: **[collectionid.js]**
+<br>
+
+- Inside the **pages folder** , create a new folder and call it **collections**, inside the collection folder create a new file and call it: **[collections].js**
+
+<br>
+
+## [Dynamic Routes](https://nextjs.org/docs/routing/dynamic-routes)
+
+##### Defining routes by using predefined paths is not always enough for complex applications. In Next.js you can add brackets to a page ([param]) to create a dynamic route (a.k.a. url slugs, pretty urls, and others). [READ MORE HERE](https://nextjs.org/docs/routing/dynamic-routes)
+
+<br>
+
+> **This is new for me**, so I will add here below, a video that will introduce you to this way of routing in **nextjs** ✋
 
 <br>
 
 - 🔴 check the video below, it s very well explained.
 
 [<img src="./z_img-read/bracket-variable.gif"/>](https://youtu.be/7J4iL1HDshQ?t=604)
+
+<br>
+<br>
