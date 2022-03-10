@@ -78,7 +78,7 @@
 
 >
 
-<br> but what are these **square** brackets: **bg-[#04111d]**, this is when you want the **exact color or font etc**
+<br> But what are these **square** brackets: **bg-[#04111d]**, this is when you want the **exact color or font etc**
 
 ```javascript
 // Header.js
@@ -94,6 +94,10 @@ const style = {
   headerIcon: `text-[#8a939b] text-3xl font-black px-4 hover:text-white cursor-pointer`,
 }
 ```
+
+<br>
+
+> The first time I thought this structure I was a bit confused, because if you know how **styled component** looks like, you will say it s similar, but after the teacher pointed out, that **this way is cleaner because with styled components you can get confused** when you dont know what is a real component and what is a div by styled components, and I agree, yes its much better.
 
 <br>
 
@@ -184,10 +188,6 @@ The files inside the pages directory can be used to define most common patterns.
 
 <br>
 
-##### video [Next.js Tutorial - 5 - Routing with Pages](https://youtu.be/hvYKrqnY8LM)
-
-<br>
-
 #### As you can see in the video below:
 
 > Next. js ships with its own built-in page-based routing system, whereas the typical SPA relies on client-side routing, typically using a library like react-router.
@@ -197,3 +197,18 @@ The files inside the pages directory can be used to define most common patterns.
 - Sp as he says it, the pages will become a route, so this is a **filesystem by its route** contrary to **react-router** where you have the switches and things like that, in here it will go by the **Filesystem**, check the min 2:48
 
 ##### video [Next.js Tutorial - Part 1 | Router for Beginners](https://youtu.be/7J4iL1HDshQ)
+
+<br>
+<br>
+
+### Let's continue
+
+#### Inside the logo container, add a text:
+
+```javascript
+<Link href="/">
+  <div className={style.logoContainer}>
+    <Image src={openseaLogo} height={40} width={40} />
+  </div>
+</Link>
+```
