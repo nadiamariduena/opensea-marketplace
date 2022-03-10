@@ -395,13 +395,18 @@ export default Header
 ```javascript
 import React from 'react'
 import { useRouter } from 'next/router'
+import Link from 'next/link'
 
 const collection = () => {
   const router = useRouter()
   //
   console.log(router.query)
   console.log(router.query.collectionId)
-  return <h2>{router.query.collectionId}</h2>
+  return (
+    <Link href="/">
+      <h2>{router.query.collectionId}</h2>
+    </Link>
+  )
 }
 
 export default collection
@@ -424,3 +429,10 @@ export default collection
 #### With router
 
 [<img src="./z_img-read/withrouter.gif"/>](https://youtu.be/7J4iL1HDshQ?t=604)
+
+<br>
+<br>
+
+# 🥭
+
+## Now lets build the hero
