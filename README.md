@@ -383,3 +383,24 @@ export default Header
 
 <br>
 <br>
+
+### Add the Router
+
+- The router is going to give you the option to add access to multiple things, one of these things are the **queries**
+
+```javascript
+import React from 'react'
+import { useRouter } from 'next/router'
+
+const collection = () => {
+  const router = useRouter()
+  //
+  console.log(router.query)
+  console.log(router.query.collectionId)
+  return <h2>{router.query.collectionId}</h2>
+}
+
+export default collection
+```
+
+##### At this point we made the connection, so you will notice that when we click on the collection link, we will see the id code on the browser, that means that we are reaching the page
