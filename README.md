@@ -157,3 +157,25 @@ ReferenceError: Link is not defined
 ```
 
 - 🔴 dont forget to add this, as it will also give you an error if you dont add it: **href="/"**
+
+<br>
+
+#### If you are new like me with NEXTJS, check this links about 'Routing':
+
+[Routing](https://nextjs.org/docs/routing/introduction)
+
+<br>
+
+##### video [Next.js Tutorial - 5 - Routing with Pages](https://youtu.be/hvYKrqnY8LM)
+
+<br>
+
+#### As you can see in the video below:
+
+> Next. js ships with its own built-in page-based routing system, whereas the typical SPA relies on client-side routing, typically using a library like react-router.
+
+<br>
+
+- Sp as he says it, the pages will become a route, so this is a **filesystem by its route** contrary to **react-router** where you have the switches and things like that, in here it will go by the **Filesystem**, check the min 2:48
+
+##### video [Next.js Tutorial - Part 1 | Router for Beginners](https://youtu.be/7J4iL1HDshQ)
