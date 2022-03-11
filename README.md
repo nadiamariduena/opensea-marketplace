@@ -776,3 +776,21 @@ const result = await client.createIfNotExists(userDoc)
 <br>
 
 > **yarn dev** to start server on 3000 and **sanity start** to start server sanity on 3333
+
+#### The unnamed user can be renamed and when you will sign in, it will not overwrite it.
+
+<br>
+
+[<img src="./z_img-read/change-name-user-sanity.gif"/>]()
+
+<br>
+<br>
+
+#### Now lets disconnect again and log in, to see if it will create a new user with the same data we already created the first user.
+
+<br>
+<br>
+
+- NO user duplication, so all is working well
+
+[<img src="./z_img-read/sanity-notduplicated-user-success.gif"/>]()
