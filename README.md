@@ -525,7 +525,7 @@ useEffect(() => {
     // 2 if there is, then you will do the following:
   ;(async () => {
     //
-    // 3 inside of the async function, we create a user DOC
+    // 3 inside of the async function, we create a user DOC, we will give it the wallet address
     const userDoc = {
       _type: 'users',
       _id: address,
@@ -542,3 +542,75 @@ useEffect(() => {
   //
 }, [address])
 ```
+
+<br>
+<br>
+
+### In order to see if its actually saving the user into sanity.io, you have to log in into sanity
+
+<br>
+
+- first **cd** into your studio
+
+- the type **sanity start**
+
+> You will get this if you are successfully connected:
+
+```javascript
+✔ Checking configuration files...
+⠙ Compiling...webpack built 91931173cd6cf96b911c in 19107ms
+✔ Compiling...
+Content Studio successfully compiled! Go to http://localhost:3333
+```
+
+<br>
+<br>
+
+- type this in your browser **http://localhost:3333**, to **open** **sanity**.
+
+<br>
+
+[<img src="./z_img-read/sanity-login.gif"/>]()
+
+<br>
+
+### Delete the user you created manually.
+
+<br>
+
+[<img src="./z_img-read/delete-manually-created-user-in-sanity.gif"/>]()
+
+<br>
+
+<br>
+<br>
+
+- 👍 **Log out from metamask** to see if its working **(as we are going to try to make a new user)**
+
+#### You will be getting some errors
+
+- 🔴 Error 0.1
+
+```javascript
+MetaMask - RPC Error: Permissions request already pending; please wait. {code: -32002, message: "Permissions request already pending; please wait."}
+```
+
+<br>
+
+##### When I saw the error I couldnt figure out the source as I had the same code from the tutorial, So I tried to clean the code and delete the useEffect to see if I could click and log in like before, but nothing.
+
+<br>
+
+> ##### so i separately open metamask and logged it, ONCE i did that, i had the second error
+
+<br>
+
+[<img src="./z_img-read/error-client.gif"/>]()
+
+<br>
+
+- Its says client not defined
+
+<br>
+
+#### Lets create the client
