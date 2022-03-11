@@ -691,6 +691,67 @@ export const client = sanityClient({
 
 <br>
 
-```javascript
+[<img src="./z_img-read/sanity-token-test.gif"/>]()
 
+### Once you have it, paste it here:
+
+```javascript
+token:
+    'skTfrwARXrAbJMnvDcuj1ImV1E5QQ7bNhCKdUyMujYwjYv8fDuwNoTIrHNfZLHOJftlUo091166wEXyCi7aRMUbHy4seqm4MYt0NtIQcUog5YHdXJw8LgEERo9Sib9KS86SZBmAR8eWdW9tm7aKIPJszGLzvIPU0UgusUZfBNl8TUn0lJcZR',
 ```
+
+<br>
+
+#### Before moving on, this is what we have:
+
+```javascript
+import sanityClient from '@sanity/client'
+
+export const client = sanityClient({
+  // for your project id, go to the sanity
+  projectId: '5qnbllu2',
+  dataset: 'production',
+  apiVersion: '2021-03-25',
+
+  token:
+    'skTfrwARXrAbJMnvDcuj1ImV1E5QQ7bNhCKdUyMujYwjYv8fDuwNoTIrHNfZLHOJftlUo091166wEXyCi7aRMUbHy4seqm4MYt0NtIQcUog5YHdXJw8LgEERo9Sib9KS86SZBmAR8eWdW9tm7aKIPJszGLzvIPU0UgusUZfBNl8TUn0lJcZR',
+  useCdn: false,
+})
+```
+
+<br>
+<br>
+
+#### Now import the sanityClient to the index.jsx
+
+```javascript
+import { useWeb3 } from '@3rdweb/hooks'
+import { useEffect } from 'react'
+import { client } from '../lib/sanityClient' ✋
+```
+
+<br>
+<br>
+
+#### Now we can use it here, where it gaves us the error
+
+```javascript
+// 4 then we tell SANITY, go ahead and create the user if "the user don't exist"
+const result = await client.createIfNotExists(userDoc)
+```
+
+#### Before testing it, delete the localhost from the metamask
+
+- you will notice that after testing it again and checking if we have the **new user** nothing happened, intead we got a **CORS 🔴** error
+
+<br>
+
+[<img src="./z_img-read/error-user-no-created-sanity-CORS.gif"/>]()
+
+<br>
+
+## CORS 🔴
+
+<br>
+
+[<img src="./z_img-read/error-user-no-created-sanity-CORS-2.gif"/>]()
