@@ -476,3 +476,69 @@ return (
 <br>
 
 #### the useEffect is actually going to run, if the user is not logged its not going to run
+
+<br>
+
+# 🦜
+
+- Here below we are going to use an [IIFE](https://flaviocopes.com/javascript-iife/) **immediately invoked function expression**, this function is created and once its created, its called right away.
+
+<br>
+
+> **;(async** I was wondering about the **semi colon** before the **async** , but there is a logic for using it, check the explanation here: [What is an immediately invoked function expression?](https://youtu.be/4XOol7LEDdc) 🔴 Really interesting example.
+
+<br>
+
+#### So this is how it looks before adding the stuff
+
+```javascript
+// normal function
+const Somefunction = () => 2
+Somefunction()(
+  //
+  // Immediately invoked function
+  () => 2
+)()
+
+/*
+
+
+
+
+
+*/
+//you must to add the semicolon to avoid issues with javascript
+//this is what we will be using
+;(async () => {
+  // All the stuff goes here
+})()
+```
+
+<br>
+<br>
+
+```javascript
+useEffect(() => {
+  // 1 If there is no address just return and get out
+  if (!address)
+    return //
+    // 2 if there is, then you will do the following:
+  ;(async () => {
+    //
+    // 3 inside of the async function, we create a user DOC
+    const userDoc = {
+      _type: 'users',
+      _id: address,
+      userName: 'Unnamed',
+      walletAddress: address,
+    }
+    //
+    // 4 then we tell SANITY, go ahead and create the user if "the user dont exist"
+    const result = await client.createIfNotExists(userDoc)
+
+    // 5 the we call the function right away
+  })()
+  //
+  //
+}, [address])
+```
