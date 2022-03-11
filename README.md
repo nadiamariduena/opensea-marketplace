@@ -223,3 +223,72 @@ a {
 #### He didnt add the overflow-x:hidden , but i had to because with the setting above, the bars remained.
 
 [<img src="./z_img-read/hero-preview-without-bars.gif"/>]()
+
+<br>
+<br>
+
+# 🍨
+
+# Authentication ✋
+
+<br>
+
+### Now we will need to add our metamask <u>authetication</u>
+
+<br>
+
+#### [Add a connect wallet button to your website](https://portal.thirdweb.com/guides/add-connectwallet-to-your-website)
+
+##### [Metamask authentication in NextJS with Third Web](https://dev.to/byteslash/metamask-authentication-in-nextjs-with-third-web-55ff)
+
+<br>
+<br>
+
+- Start by importing **3web**
+
+> import { ThirdwebWeb3Provider } from '@3rdweb/hooks'
+
+<br>
+
+- Then **install it** ✋
+
+```javascript
+yarn add @3rdweb/hooks
+
+// OR
+
+npm i @3rdweb/hooks
+
+```
+
+#### You should have the following inside the package.json (that is not in the studio)
+
+```javascript
+  "dependencies": {
+    "@3rdweb/hooks": "^1.9.2", ✋
+    "next": "latest",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1"
+  },
+```
+
+<br>
+<br>
+
+```javascript
+import '../styles/globals.css'
+import { ThirdwebWeb3Provider } from '@3rdweb/hooks'
+//
+//
+
+function MyApp({ Component, pageProps }) {
+  return (
+    <>
+      <Component {...pageProps} />
+    </>
+  )
+}
+
+export default MyApp
+```
