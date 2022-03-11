@@ -587,6 +587,8 @@ Content Studio successfully compiled! Go to http://localhost:3333
 
 - 👍 **Log out from metamask** to see if its working **(as we are going to try to make a new user)**
 
+<br>
+
 #### You will be getting some errors
 
 - 🔴 Error 0.1
@@ -597,19 +599,25 @@ MetaMask - RPC Error: Permissions request already pending; please wait. {code: -
 
 <br>
 
-##### When I saw the error I couldnt figure out the source as I had the same code from the tutorial, So I tried to clean the code and delete the useEffect to see if I could click and log in like before, but nothing.
+##### Read more: [MetaMask - RPC Error: Permissions request already pending, in Angular 10](https://stackoverflow.com/questions/64980778/metamask-rpc-error-permissions-request-already-pending-in-angular-10)
 
 <br>
 
-> ##### so i separately open metamask and logged it, ONCE i did that, i had the second error
+##### When I saw the error I couldnt figure out the source as I had the same code from the tutorial, So I tried to clean the code and delete the useEffect, to see if I could click and log in like before, but nothing.
+
+<br>
+
+- So i read the link above and I deleted the **cookies** also unsuccessful
+
+<br>
+
+> ##### so i separately open metamask and logged it, ONCE i did that, i had the second error, this time its related to the client.
 
 <br>
 
 [<img src="./z_img-read/error-client.gif"/>]()
 
 <br>
-
-- Its says client not defined
 
 <br>
 
