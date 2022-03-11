@@ -552,7 +552,7 @@ useEffect(() => {
 
 - first **cd** into your studio
 
-- the type **sanity start**
+- the type **sanity start** 🐱 🌴
 
 > You will get this if you are successfully connected:
 
@@ -755,3 +755,11 @@ const result = await client.createIfNotExists(userDoc)
 <br>
 
 [<img src="./z_img-read/error-user-no-created-sanity-CORS-2.gif"/>]()
+
+<br>
+
+#### Lets try it again, this time we will check the 'case' of <u>allow credentials</u>
+
+<br>
+
+[<img src="./z_img-read/error-solved-CORS-3.gif"/>]()
