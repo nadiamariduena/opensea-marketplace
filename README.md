@@ -352,5 +352,101 @@ export default MyApp
 
 <br>
 <br>
+<br>
+
+# 🍉
 
 ## Now go back to the pages/index.jsx
+
+#### import the **3web hook**
+
+```javascript
+import { useWeb3 } from '@3rdweb/hooks'
+```
+
+#### paste some styles
+
+```javascript
+const style = {
+  wrapper: ``,
+  walletConnectWrapper: `flex flex-col justify-center items-center h-screen w-screen bg-[#3b3d42] `,
+  // Use flex-col to position flex items vertically:  https://tailwindcss.com/docs/flex-direction#column
+  //
+  // w-screen	width: 100vw;
+  // h-screen	height: 100vh;
+  //
+  button: `border border-[#282b2f] bg-[#2081e2] p-[0.8rem] text-xl font-semibold rounded-lg cursor-pointer text-black`,
+  //rounded-lg	border-radius: 0.5rem; /* 8px */
+  //
+  details: `text-lg text-center text=[#282b2f] font-semibold mt-4`,
+}
+```
+
+<br>
+
+#### pass the 3web hook
+
+```javascript
+const { address, connectWallet } = useWeb3()
+```
+
+<br>
+<br>
+
+#### Now lets add some condition to know if the user is log
+
+```javascript
+return (
+  <div className={style.wrapper}>
+    {address ? (
+      <>
+        <Header />
+        <Hero />
+      </>
+    ) : (
+      <button
+        className={style.button}
+        onClick={() => connectWallet('injected')}
+      >
+        Connect Wallet
+      </button>
+    )}
+  </div>
+)
+```
+
+#### result
+
+[<img src="./z_img-read/button-metamask-connection.gif"/>]()
+
+<br>
+
+### Now lets wrap the button to give it some style
+
+- the button will be positioned at the center
+
+```javascript
+<div className={style.wrapper}>
+  {address ? (
+    <>
+      <Header />
+      <Hero />
+    </>
+  ) : (
+    <div className={style.walletConnectWrapper}>
+      {/* button  ✋*/}
+      <button
+        className={style.button}
+        onClick={() => connectWallet('injected')}
+      >
+        Connect Wallet
+      </button>
+      {/* ✋  */}
+      <div className={style.details}>
+        You need Chrome to be
+        <br /> able to run this app.
+      </div>
+    </div>
+  )}
+</div>
+```
