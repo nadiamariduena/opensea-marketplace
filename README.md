@@ -450,3 +450,14 @@ return (
   )}
 </div>
 ```
+
+<br>
+<br>
+
+#### It works, but its so easy that it makes me feel weird, as if you have tried authentications with node/express etc, you know its a pain, mostly because the hashing and a never ending stuff for security..I really cant believe it
+
+<br>
+
+- 👍 SO its working (it didnt ask me the password because i did put it in a previous test) and you can even [log to 3web](https://thirdweb.com/dashboard) once you log in.
+
+[<img src="./z_img-read/metamask-loginin-sucess.gif"/>]()
