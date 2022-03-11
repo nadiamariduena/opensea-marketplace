@@ -53,7 +53,7 @@
 
  <br>
 
-- yarn start 🌵
+> **yarn dev** to start server on 3000 and **sanity start** to start server sanity on 3333 🌵
 
 ## <br>
 
@@ -467,7 +467,10 @@ return (
 <br>
 <br>
 
-## Sanity
+# Sanity
+
+<br>
+<br>
 
 #### When the user logs in we want to add the user to the Sanity.io data base
 
@@ -765,3 +768,7 @@ const result = await client.createIfNotExists(userDoc)
 <br>
 
 [<img src="./z_img-read/error-solved-CORS-3.gif"/>]()
+
+<br>
+
+> **yarn dev** to start server on 3000 and **sanity start** to start server sanity on 3333
