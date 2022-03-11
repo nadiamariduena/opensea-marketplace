@@ -461,3 +461,18 @@ return (
 - 👍 SO its working (it didnt ask me the password because i did put it in a previous test) and you can even [log to 3web](https://thirdweb.com/dashboard) once you log in.
 
 [<img src="./z_img-read/metamask-loginin-sucess.gif"/>]()
+
+<br>
+<br>
+
+## Sanity
+
+#### When the user logs in we want to add the user to the Sanity.io data base
+
+<br>
+
+- First thing we will do is to create a **useEffect** and it will be looking for the **[address]** , this address will occur as soon as **the user logs in**
+
+<br>
+
+#### the useEffect is actually going to run, if the user is not logged its not going to run
