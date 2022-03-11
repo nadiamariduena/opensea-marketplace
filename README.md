@@ -299,6 +299,58 @@ export default MyApp
 
 <br>
 
-## The chain
+## The chain network
 
-- **4** mean its **Rinkeby Testing chain** , check it out: [Network ID and chain ID](https://besu.hyperledger.org/en/stable/Concepts/NetworkID-And-ChainID/)
+- **4** mean its **Rinkeby Testing network** , check it out: [Network ID and chain ID](https://besu.hyperledger.org/en/stable/Concepts/NetworkID-And-ChainID/)
+
+<br>
+<br>
+
+# 🥭
+
+### Now we need to wrap the app in our <u>ThirdwebWeb3Provider</u> provider
+
+- so that we can access the it from every component
+
+```javascript
+import '../styles/globals.css'
+import { ThirdwebWeb3Provider } from '@3rdweb/hooks'
+//
+
+/**
+ * The chain ID 4 represents the Rinkeby network (read more in the branch and here z_articles.md)
+ * The `injected` connector is a web3 connection method used by Metamask
+ */
+const supportedChainIds = [4]
+const connectors = {
+  //here below we will be injecting the metamask
+  injected: {},
+}
+
+//
+
+function MyApp({ Component, pageProps }) {
+  return (
+    <>
+      ✋{' '}
+      <ThirdwebWeb3Provider
+        supportedChainIds={supportedChainIds}
+        connectors={connectors}
+      >
+        <Component {...pageProps} />✋{' '}
+      </ThirdwebWeb3Provider>
+    </>
+  )
+}
+
+export default MyApp
+```
+
+<br>
+
+#### Before moving on, look at the code above and think about it
+
+<br>
+<br>
+
+## Now go back to the pages/index.jsx
