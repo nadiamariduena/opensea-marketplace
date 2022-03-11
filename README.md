@@ -90,15 +90,27 @@ import React from 'react'
 // Hero.js
 const style = {
   wrapper: `relative`,
+  //BACKGROUND IMAGE and opacity, but keep in mind that another color is inside the styles/globals.css
+  //this is a div behind the one with the text and the img, that is why here below you have the before:absolute
   container: `before:content-[''] before:bg-red-500 before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[url('https://lh3.googleusercontent.com/ujepnqpnL0nDQIHsWxlCXzyw4pf01yjz1Jmb4kAQHumJAPrSEj0-e3ABMZlZ1HEpJoqwOcY_kgnuJGzfXbd2Tijri66GXUtfN2MXQA=s250')] before:bg-cover before:bg-center before:opacity-30 before:blur`,
+  //
   contentWrapper: `flex h-screen relative justify-center flex-wrap items-center`,
-  copyContainer: `w-1/2`,
+
+  //
+  copyContainer: `w-1/2    `,
+
+  //
   title: `relative text-white text-[46px] font-semibold`,
   description: `text-[#8a939b] container-[400px] text-2xl mt-[0.8rem] mb-[2.5rem]`,
   ctaContainer: `flex`,
   accentedButton: ` relative text-lg font-semibold px-12 py-4 bg-[#2181e2] rounded-lg mr-5 text-white hover:bg-[#42a0ff] cursor-pointer`,
   button: ` relative text-lg font-semibold px-12 py-4 bg-[#363840] rounded-lg mr-5 text-[#e4e8ea] hover:bg-[#4c505c] cursor-pointer`,
-  cardContainer: `rounded-[3rem]`,
+  //
+  //img large -----------
+  cardContainer: `rounded-[3rem] bg-cyan-500 shadow-lg shadow-cyan-500/50`,
+  //
+  //https://tailwindcss.com/docs/box-shadow-color
+  //
   infoContainer: `h-20 bg-[#313338] p-4 rounded-b-lg flex items-center text-white`,
   author: `flex flex-col justify-center ml-4`,
   name: ``,
@@ -111,6 +123,7 @@ const Hero = () => {
   return (
     <div className={style.wrapper}>
       <div className={style.container}>
+        {/*  */}
         <div className={style.contentWrapper}>
           <div className={style.copyContainer}>
             <div className={style.title}>
@@ -125,13 +138,37 @@ const Hero = () => {
             </div>
           </div>
           <div className={style.cardContainer}>
+            {/* 
+              
+              Big image
+              
+              
+              */}
+            <img
+              className="rounded-t-lg"
+              src="https://lh3.googleusercontent.com/ujepnqpnL0nDQIHsWxlCXzyw4pf01yjz1Jmb4kAQHumJAPrSEj0-e3ABMZlZ1HEpJoqwOcY_kgnuJGzfXbd2Tijri66GXUtfN2MXQA=s550"
+              alt=""
+            />
             <div className={style.infoContainer}>
+              {/* 
+                
+                
+                img avatar 
+                
+                
+                */}
+
               <img
                 className="h-[2.25rem] rounded-full"
                 src="https://lh3.googleusercontent.com/qQj55gGIWmT1EnMmGQBNUpIaj0qTyg4YZSQ2ymJVvwr_mXXjuFiHJG9d3MRgj5DVgyLa69u8Tq9ijSm_stsph8YmIJlJQ1e7n6xj=s64"
                 alt=""
               />
-              // // // DESCRIPTION IMAGE with circle avatar //
+
+              {/* 
+              
+              
+              
+              */}
               <div className={style.author}>
                 <div className={style.name}>Jolly</div>
                 <a
