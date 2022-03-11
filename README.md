@@ -763,7 +763,11 @@ const result = await client.createIfNotExists(userDoc)
 
 <br>
 
-#### Lets try it again, this time we will check the 'case' of <u>allow credentials</u>
+#### Lets try it again, this time we will check the 'case' of <u>allow credentials</u> to prevent that error to happen
+
+<br>
+
+- As you can see, we successfully ✋ created the user **unnamed**
 
 <br>
 
