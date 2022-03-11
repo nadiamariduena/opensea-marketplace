@@ -621,4 +621,76 @@ MetaMask - RPC Error: Permissions request already pending; please wait. {code: -
 
 <br>
 
+# Client
+
 #### Lets create the client
+
+- Create a new folder and call it **lib**, inside the lib folder create a file and call it: **sanityClient.js**
+
+<br>
+
+- install the following module (not inside the **studio**)
+
+```javascript
+
+yarn add @sanity/client
+//
+// or with this
+```
+
+#### you should have something like this
+
+```javascript
+  "dependencies": {
+    "@3rdweb/hooks": "^1.9.2",
+    "@sanity/client": "^3.2.0", ✋
+    "next": "latest",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1"
+  },
+```
+
+<br>
+
+#### now import it inside the sanityClient.js
+
+```javascript
+import sanityClient from '@sanity/client'
+```
+
+<br>
+<br>
+
+#### Here you will need the <u>projectId</u> , for that go to your sanity project
+
+<br>
+
+[<img src="./z_img-read/sanity-project-id.gif"/>]()
+
+<br>
+
+```javascript
+export const client = sanityClient({
+  // for your project id, go to the sanity
+  projectId: '5qnbllu2',
+  dataset: 'production',
+  apiVersion: '2021-03-25',
+
+  //
+  // TOKEN
+  // to generate the token, go to sanity project and click in API
+  token: 'your token here',
+  useCdn: false,
+})
+```
+
+<br>
+
+### Generate the token
+
+<br>
+
+```javascript
+
+```
