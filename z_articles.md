@@ -132,8 +132,37 @@ lower execution cost, thats called **gas optimisation**,
 
 <br>
 
-- **In contrast to mainnet networks, the term testnet describes when a blockchain protocol or network is not yet up and running on its full capacity**. A testnet is used by programmers and developers to test and troubleshoot all the aspects and features of a blockchain network before they are sure the system is secure and ready for the mainnet launch.
+- **In contrast to mainnet networks, the term <u> testnet ✋</u>describes when a blockchain protocol or network is not yet up and running on its full capacity**. A testnet is used by programmers and developers to test and troubleshoot all the aspects and features of a blockchain network before they are sure the system is secure and ready for the mainnet launch.
 
+<br>
+<br>
+
+## [Network ID and chain ID](https://besu.hyperledger.org/en/stable/Concepts/NetworkID-And-ChainID/) 👾
+
+> Ethereum networks have two identifiers, a network ID and a chain ID. Although they often have the same value, they have different uses.
+
+- Peer-to-peer communication between nodes uses the network ID, while the transaction signature process uses the chain ID.
+
+<br>
+
+- For most networks, including Mainnet and the public testnets, the network ID and the chain ID are the same, with the network ID defaulting to the chain ID, as specified in the genesis file.
+
+```javascript
+{
+  "config": {
+    "ethash": {
+    },
+     "chainID": 1981
+  },
+  ...
+}
+```
+
+<br>
+
+- **4** mean its **Rinkeby Testing chain** , check it out: [Network ID and chain ID](https://besu.hyperledger.org/en/stable/Concepts/NetworkID-And-ChainID/)
+
+<br>
 <br>
 
 #### On this local blockchain network you can have infinite fake ether, which mean you can send as many transactions as you want, lose all the money, it doesnt matter at all.

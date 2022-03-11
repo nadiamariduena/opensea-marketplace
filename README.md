@@ -292,3 +292,13 @@ function MyApp({ Component, pageProps }) {
 
 export default MyApp
 ```
+
+<br>
+
+#### Once installed, lets build the chain
+
+<br>
+
+## The chain
+
+- **4** mean its **Rinkeby Testing chain** , check it out: [Network ID and chain ID](https://besu.hyperledger.org/en/stable/Concepts/NetworkID-And-ChainID/)
