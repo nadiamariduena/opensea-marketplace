@@ -1314,3 +1314,99 @@ return (
 - this is what we have now with the image and the descript/details container
 
 [<img src="./z_img-read/nft-card-path.gif"/>]()
+
+<br>
+<br>
+<br>
+
+#### I will not bother on the frontend again, but i will explain the condition we will add on the bottom of the code for the nfts <u>that are listed</u> and the ones <u>that aren't listed </u>
+
+<br>
+
+```javascript
+<div className={style.details}>
+  <div className={style.info}>
+    <div className={style.infoLeft}>
+      <div className={style.collectionName}>{title}</div>
+      <div className={style.assetName}>{nftItem.name}</div>
+    </div>
+    {/* 
+          
+          ✋
+if the item is listed, we will show the "info" on the right and that
+info is going to contain the price value but if its not listed the nft is not going to show any price
+          */}
+    {isListed && (
+      <div className={style.infoRight}>
+        <div className={style.priceTag}>Price</div>
+        <div className={style.priceValue}>
+          <img
+            src="https://storage.opensea.io/files/6f8e2979d428180222796ff4a33ab929.svg"
+            alt="eth"
+            className={style.ethLogo}
+          />
+          {price}
+        </div>
+      </div>
+    )}
+    // ✋
+  </div>
+  {/* 
+        
+        
+                  Likes
+
+        */}
+  <div className={style.likes}>
+    <span className={style.likeIcon}>
+      <BiHeart />
+    </span>{' '}
+    {nftItem.likes}
+  </div>
+</div>
+```
+
+<br>
+
+### The condition ✋
+
+- **if the item is listed**, we will show the "info" on the right and that
+  info is going to contain the price value but if its not listed the nft is not going to show any price
+
+```javascript
+{
+  isListed && (
+    <div className={style.infoRight}>
+      <div className={style.priceTag}>Price</div>
+      <div className={style.priceValue}>
+        <img
+          src="https://storage.opensea.io/files/6f8e2979d428180222796ff4a33ab929.svg"
+          alt="eth"
+          className={style.ethLogo}
+        />
+        {price}
+      </div>
+    </div>
+  )
+}
+```
+
+# ⚠️ test it
+
+- For that I decided to do a test, as I wanted to see if there is any difference in the way the nfts are shown if I added a new nft in the **3web** that wasnt **listed**
+
+##### 🔴 I noticed that after I added the new nft my collection of nft's dissappeared from the collections page but some how i suspected that if i logged in the sanity.io something was going to happen, actually I knew that i will have to do something there to find a way to update what i just did in the 3web (but i didnt know what), 🌈 so lucky for me, from the moment i logged in, the picture appeared inside the collections page
+
+[<img src="./z_img-read/new-nft-notshowing.gif"/>]()
+
+<br>
+
+### So this is how the listed and unlisted look
+
+- I will add more 3 unlisted nfts' because it looks ugly like that
+
+<br>
+
+[<img src="./z_img-read/unlisted-nft-example.webp"/>]()
+
+<br>
