@@ -434,3 +434,27 @@ const fetchCollectionData = async (sanityClient = client) => {
 <br>
 
 [<img src="./z_img-read/sanity-generating-query1.gif"/>]()
+
+<br>
+
+## VISION
+
+#### In the next step we ill be using the [VISION plugin](https://www.sanity.io/docs/the-vision-plugin) <u> from sanity </u>
+
+<br>
+
+##### Quickly test your GROQ queries using this studio plugin
+
+Vision is a plugin that lets you quickly test your GROQ queries right from the Studio. It shows up as a tool in the navigation bar when installed, and is part of the default Studio setup when running in development mode.
+
+#### Add your Nft id here below
+
+```javascript
+*[_type == "marketItems" && contractAddress == "0xB4D9B62983AD4027533905D1DbFcEE732Bc0CEC7"]{
+  address
+}
+```
+
+<br>
+
+[<img src="./z_img-read/sanity-generating-query2.gif"/>]()
