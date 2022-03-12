@@ -129,3 +129,53 @@ const style = {
   description: `text-[#8a939b] text-xl w-max-1/4 flex-wrap mt-4`,
 }
 ```
+
+<br>
+<br>
+
+#### Now Add the following:
+
+- Here we will need to add the **provider coming from the web3** , than we will need to add the **collectionId**
+
+```javascript
+import React from 'react'
+import { useRouter } from 'next/router'
+import Link from 'next/link'
+
+//
+import { useWeb3 } from '@3rdweb/hooks' ✋
+import { client } from '../../lib/sanityClient'  ✋
+//
+/*
+
+
+
+*/
+const collection = () => {
+  const router = useRouter()
+
+  //
+  const { provider } = useWeb3() ✋
+  const { collectionId } = router.query ✋
+  //
+```
+
+<br>
+
+#### Set up an <u>states</u> for collections, nft's & listings coming from the collections we created in the [thirdweb](https://thirdweb.com/dashboard)
+
+- the state is going to give us the possibility to have access to all I mentioned above
+
+```javascript
+const [collection, setCollection] = useState({})
+const [nfts, setNfts] = useState([])
+const [listings, setListings] = useState([])
+```
+
+<br>
+
+- the state is going to get **access to all of the below**
+
+<br>
+
+[<img src="./z_img-read/states-to-get-access-thecollection.gif"/>]()
