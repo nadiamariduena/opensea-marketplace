@@ -60,171 +60,694 @@
 <br>
 <br>
 
-# 🌈
+# 🍨
 
-## Hero component
+## Sanity.io Authentication ✋
 
-- Create the **Hero.js** inside the **components folder**, then import it inside the **pages/index**
+#### Some articles
 
-<br>
+##### [Add a connect wallet button to your website](https://portal.thirdweb.com/guides/add-connectwallet-to-your-website)
 
-##### [Hero styles](https://drive.google.com/drive/folders/1BS_tG_B7kH3pJVBu6KJiLgsk4T2gt9Jr)
-
-<br>
-
-#### So here there is nothing ordinary, only the tailwind part but if you know about css, you understand what is happeing.
-
-- for example: it has a position relative, it s relative also the wrapper, than the fontsize is at 46px etc
+##### [Metamask authentication in NextJS with Third Web](https://dev.to/byteslash/metamask-authentication-in-nextjs-with-third-web-55ff)
 
 <br>
-
-- this [rounded-full](https://tailwindcss.com/docs/border-radius) on the images is a **border-radius**
-
 <br>
 
-- **h-screen** height: 100vh;
+### Start by importing **3web**
 
 ```javascript
-import React from 'react'
+import { ThirdwebWeb3Provider } from '@3rdweb/hooks'
+```
 
+<br>
+
+- Than **install it** ✋
+
+```javascript
+yarn add @3rdweb/hooks
+
+// OR
+
+npm i @3rdweb/hooks
+
+```
+
+##### You should have the following inside the package.json (that is not in the studio)
+
+```javascript
+  "dependencies": {
+    "@3rdweb/hooks": "^1.9.2", ✋
+    "next": "latest",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1"
+  },
+```
+
+<br>
+<br>
+
+```javascript
+import '../styles/globals.css'
+import { ThirdwebWeb3Provider } from '@3rdweb/hooks'
+//
 //
 
-// Hero.js
-const style = {
-  wrapper: `relative`,
-  //BACKGROUND IMAGE and opacity, but keep in mind that another color is inside the styles/globals.css
-  //this is a div behind the one with the text and the img, that is why here below you have the before:absolute
-  container: `before:content-[''] before:bg-red-500 before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[url('https://lh3.googleusercontent.com/ujepnqpnL0nDQIHsWxlCXzyw4pf01yjz1Jmb4kAQHumJAPrSEj0-e3ABMZlZ1HEpJoqwOcY_kgnuJGzfXbd2Tijri66GXUtfN2MXQA=s250')] before:bg-cover before:bg-center before:opacity-30 before:blur`,
-  //
-  contentWrapper: `flex h-screen relative justify-center flex-wrap items-center`,
-
-  //
-  copyContainer: `w-1/2    `,
-
-  //
-  title: `relative text-white text-[46px] font-semibold`,
-  description: `text-[#8a939b] container-[400px] text-2xl mt-[0.8rem] mb-[2.5rem]`,
-  ctaContainer: `flex`,
-  accentedButton: ` relative text-lg font-semibold px-12 py-4 bg-[#2181e2] rounded-lg mr-5 text-white hover:bg-[#42a0ff] cursor-pointer`,
-  button: ` relative text-lg font-semibold px-12 py-4 bg-[#363840] rounded-lg mr-5 text-[#e4e8ea] hover:bg-[#4c505c] cursor-pointer`,
-  //
-  //img large -----------
-  cardContainer: `rounded-[3rem] bg-cyan-500 shadow-lg shadow-cyan-500/50`,
-  //
-  //https://tailwindcss.com/docs/box-shadow-color
-  //
-  infoContainer: `h-20 bg-[#313338] p-4 rounded-b-lg flex items-center text-white`,
-  author: `flex flex-col justify-center ml-4`,
-  name: ``,
-  infoIcon: `flex justify-end items-center flex-1 text-[#8a939b] text-3xl font-bold`,
-}
-//
-//
-
-const Hero = () => {
+function MyApp({ Component, pageProps }) {
   return (
-    <div className={style.wrapper}>
-      <div className={style.container}>
-        {/*  */}
-        <div className={style.contentWrapper}>
-          <div className={style.copyContainer}>
-            <div className={style.title}>
-              Discover, collect, and sell extraordinary NFTs
-            </div>
-            <div className={style.description}>
-              OpenSea is the world&apos;s first and largest NFT marketplace
-            </div>
-            <div className={style.ctaContainer}>
-              <button className={style.accentedButton}>Explore</button>
-              <button className={style.button}>Create</button>
-            </div>
-          </div>
-          <div className={style.cardContainer}>
-            {/* 
-              
-              Big image
-              
-              
-              */}
-            <img
-              className="rounded-t-lg"
-              src="https://lh3.googleusercontent.com/ujepnqpnL0nDQIHsWxlCXzyw4pf01yjz1Jmb4kAQHumJAPrSEj0-e3ABMZlZ1HEpJoqwOcY_kgnuJGzfXbd2Tijri66GXUtfN2MXQA=s550"
-              alt=""
-            />
-            <div className={style.infoContainer}>
-              {/* 
-                
-                
-                img avatar 
-                
-                
-                */}
-
-              <img
-                className="h-[2.25rem] rounded-full"
-                src="https://lh3.googleusercontent.com/qQj55gGIWmT1EnMmGQBNUpIaj0qTyg4YZSQ2ymJVvwr_mXXjuFiHJG9d3MRgj5DVgyLa69u8Tq9ijSm_stsph8YmIJlJQ1e7n6xj=s64"
-                alt=""
-              />
-
-              {/* 
-              
-              
-              
-              */}
-              <div className={style.author}>
-                <div className={style.name}>Jolly</div>
-                <a
-                  className="text-[#1868b7]"
-                  href="https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/2324922113504035910649522729980423429926362207300810036887725141691069366277"
-                >
-                  hola-kanola
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <>
+      <Component {...pageProps} />
+    </>
   )
 }
 
-export default Hero
+export default MyApp
+```
+
+<br>
+
+#### Once installed, lets build the chain
+
+### The chain network
+
+- **4** mean its **Rinkeby Testing network** , check it out: [Network ID and chain ID](https://besu.hyperledger.org/en/stable/Concepts/NetworkID-And-ChainID/)
+
+<br>
+<br>
+
+### Context/provider
+
+##### Now we need to wrap the app in our <u>ThirdwebWeb3Provider</u> provider
+
+<br>
+
+> Once you've installed the necessary package, you just need to setup the ThirdwebProvider that provides all the context consumed by your app. **With this context, you will have a standard web3 provider that you can use throughout your app.**
+
+<br>
+
+**Setting up this context is as easy** as wrapping your app with the following setup:
+
+[read more here](https://portal.thirdweb.com/guides/add-connectwallet-to-your-website)
+
+<br>
+
+```javascript
+import '../styles/globals.css'
+import { ThirdwebWeb3Provider } from '@3rdweb/hooks'
+//
+
+/**
+ * The chain ID 4 represents the Rinkeby network (read more in the branch and here z_articles.md)
+ * The `injected` connector is a web3 connection method used by Metamask
+ */
+const supportedChainIds = [4]
+const connectors = {
+  //here below we will be injecting the metamask
+  injected: {},
+}
+
+//
+
+function MyApp({ Component, pageProps }) {
+  return (
+    <>
+      ✋{' '}
+      <ThirdwebWeb3Provider
+        supportedChainIds={supportedChainIds}
+        connectors={connectors}
+      >
+        <Component {...pageProps} />✋{' '}
+      </ThirdwebWeb3Provider>
+    </>
+  )
+}
+
+export default MyApp
+```
+
+<br>
+
+#### Before moving on, look at the code above and think about it
+
+<br>
+<br>
+<br>
+
+# 🍉
+
+#### Now go back to the pages/index.jsx
+
+#### import the **3web hook**
+
+```javascript
+import { useWeb3 } from '@3rdweb/hooks'
+```
+
+##### paste some styles
+
+```javascript
+const style = {
+  wrapper: ``,
+  walletConnectWrapper: `flex flex-col justify-center items-center h-screen w-screen bg-[#3b3d42] `,
+  // Use flex-col to position flex items vertically:  https://tailwindcss.com/docs/flex-direction#column
+  //
+  // w-screen	width: 100vw;
+  // h-screen	height: 100vh;
+  //
+  button: `border border-[#282b2f] bg-[#2081e2] p-[0.8rem] text-xl font-semibold rounded-lg cursor-pointer text-black`,
+  //rounded-lg	border-radius: 0.5rem; /* 8px */
+  //
+  details: `text-lg text-center text=[#282b2f] font-semibold mt-4`,
+}
+```
+
+<br>
+
+##### pass the 3web hook
+
+```javascript
+const { address, connectWallet } = useWeb3()
 ```
 
 <br>
 <br>
 
-#### Now lets get rid of the ugly x direction bar from the bottom of the page
+#### Now lets add some condition to know if the user is log
 
-[<img src="./z_img-read/hero-preview-bars.gif"/>]()
+```javascript
+return (
+  <div className={style.wrapper}>
+    {address ? (
+      <>
+        <Header />
+        <Hero />
+      </>
+    ) : (
+      <button
+        className={style.button}
+        onClick={() => connectWallet('injected')}
+      >
+        Connect Wallet
+      </button>
+    )}
+  </div>
+)
+```
 
-- Go to the **styles** folder and inside the **globals.css**
+#### result
 
-```css
-html,
-body {
-  background-color: #202225;
-  padding: 0;
-  margin: 0;
+[<img src="./z_img-read/button-metamask-connection.gif"/>]()
 
-  overflow-x: hidden; ✋
-}
+<br>
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+### Now lets wrap the button to give it some style
 
-* {
-  box-sizing: border-box;
-}
+- the button will be positioned at the center
+
+```javascript
+<div className={style.wrapper}>
+  {address ? (
+    <>
+      <Header />
+      <Hero />
+    </>
+  ) : (
+    <div className={style.walletConnectWrapper}>
+      {/* button  ✋*/}
+      <button
+        className={style.button}
+        onClick={() => connectWallet('injected')}
+      >
+        Connect Wallet
+      </button>
+      {/* ✋  */}
+      <div className={style.details}>
+        You need Chrome to be
+        <br /> able to run this app.
+      </div>
+    </div>
+  )}
+</div>
+```
+
+<br>
+<br>
+
+#### It works, but its so easy that it makes me feel weird, as if you have tried authentications with node/express etc, you know its a pain, mostly because the hashing and a never ending stuff for security..I really cant believe it
+
+<br>
+
+- 👍 SO its working (it didnt ask me the password because i did put it in a previous test) and you can even [log to 3web](https://thirdweb.com/dashboard) once you log in.
+
+[<img src="./z_img-read/metamask-loginin-sucess.gif"/>]()
+
+<br>
+<br>
+
+# Sanity.io
+
+<br>
+<br>
+
+#### When the user logs in we want to add the user to the Sanity.io data base
+
+<br>
+
+- First thing we will do is to create a **useEffect** and it will be looking for the **[address]** , this address will occur as soon as **the user logs in**
+
+<br>
+
+#### the useEffect is actually going to run, if the user is not logged its not going to run
+
+<br>
+
+# 🦜
+
+- Here below we are going to use an [IIFE](https://flaviocopes.com/javascript-iife/) **immediately invoked function expression**, this function is created and once its created, its called right away.
+
+<br>
+
+> **;(async** I was wondering about the **semi colon** before the **async** , but there is a logic for using it, check the explanation here: [What is an immediately invoked function expression?](https://youtu.be/4XOol7LEDdc) 🔴 Really interesting example.
+
+<br>
+
+#### So this is how it looks before adding the stuff
+
+```javascript
+// normal function
+const Somefunction = () => 2
+Somefunction()(
+  //
+  // Immediately invoked function
+  () => 2
+)()
+
+/*
+
+
+
+
+
+*/
+//you must to add the semicolon to avoid issues with javascript
+//this is what we will be using
+;(async () => {
+  // All the stuff goes here
+})()
+```
+
+<br>
+<br>
+
+```javascript
+useEffect(() => {
+  // 1 If there is no address just return and get out
+  if (!address)
+    return //
+    // 2 if there is, then you will do the following:
+  ;(async () => {
+    //
+    // 3 inside of the async function, we create a user DOC, we will give it the wallet address
+    const userDoc = {
+      _type: 'users',
+      _id: address,
+      userName: 'Unnamed',
+      walletAddress: address,
+    }
+    //
+    // 4 then we tell SANITY, go ahead and create the user if "the user dont exist"
+    const result = await client.createIfNotExists(userDoc)
+
+    // 5 the we call the function right away
+  })()
+  //
+  //
+}, [address])
+```
+
+<br>
+<br>
+
+### In order to see if its actually saving the user into sanity.io, you have to log in into sanity
+
+<br>
+
+- first **cd** into your studio
+
+- the type **sanity start** 🐱 🌴
+
+> You will get this if you are successfully connected:
+
+```javascript
+✔ Checking configuration files...
+⠙ Compiling...webpack built 91931173cd6cf96b911c in 19107ms
+✔ Compiling...
+Content Studio successfully compiled! Go to http://localhost:3333
+```
+
+<br>
+<br>
+
+- type this in your browser **http://localhost:3333**, to **open** **sanity**.
+
+<br>
+
+[<img src="./z_img-read/sanity-login.gif"/>]()
+
+<br>
+
+### Delete the user you created manually.
+
+<br>
+
+[<img src="./z_img-read/delete-manually-created-user-in-sanity.gif"/>]()
+
+<br>
+
+<br>
+<br>
+
+- 👍 **Log out from metamask** to see if its working **(as we are going to try to make a new user)**
+
+<br>
+
+#### You will be getting some errors
+
+- 🔴 Error 0.1
+
+```javascript
+MetaMask - RPC Error: Permissions request already pending; please wait. {code: -32002, message: "Permissions request already pending; please wait."}
 ```
 
 <br>
 
-#### He didnt add the overflow-x:hidden , but i had to because with the setting above, the bars remained.
+##### Read more: [MetaMask - RPC Error: Permissions request already pending, in Angular 10](https://stackoverflow.com/questions/64980778/metamask-rpc-error-permissions-request-already-pending-in-angular-10)
 
-[<img src="./z_img-read/hero-preview-without-bars.gif"/>]()
+<br>
+
+##### When I saw the error I couldnt figure out the source as I had the same code from the tutorial, So I tried to clean the code and delete the useEffect, to see if I could click and log in like before, but nothing.
+
+<br>
+
+- So i read the link above and I deleted the **cookies** also unsuccessful
+
+<br>
+
+> ##### so i separately open metamask and logged it, ONCE i did that, i had the second error, this time its related to the client.
+
+<br>
+
+[<img src="./z_img-read/error-client.gif"/>]()
+
+<br>
+
+<br>
+
+# Client
+
+#### Lets create the client
+
+- Create a new folder and call it **lib**, inside the lib folder create a file and call it: **sanityClient.js**
+
+<br>
+
+- install the following module (not inside the **studio**)
+
+```javascript
+
+yarn add @sanity/client
+//
+// or with this
+```
+
+#### you should have something like this
+
+```javascript
+  "dependencies": {
+    "@3rdweb/hooks": "^1.9.2",
+    "@sanity/client": "^3.2.0", ✋
+    "next": "latest",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1"
+  },
+```
+
+<br>
+
+#### now import it inside the sanityClient.js
+
+```javascript
+import sanityClient from '@sanity/client'
+```
 
 <br>
 <br>
+
+#### Here you will need the <u>projectId</u> , for that go to your sanity project
+
+<br>
+
+[<img src="./z_img-read/sanity-project-id.gif"/>]()
+
+<br>
+
+```javascript
+export const client = sanityClient({
+  // for your project id, go to the sanity
+  projectId: '5qnbllu2',
+  dataset: 'production',
+  apiVersion: '2021-03-25',
+
+  //
+  // TOKEN
+  // to generate the token, go to sanity project and click in API
+  token: 'your token here',
+  useCdn: false,
+})
+```
+
+<br>
+
+### Generate the token
+
+<br>
+
+[<img src="./z_img-read/sanity-token-test.gif"/>]()
+
+### Once you have it, paste it here:
+
+```javascript
+token:
+    'skTfrwARXrAbJMnvDcuj1ImV1E5QQ7bNhCKdUyMujYwjYv8fDuwNoTIrHNfZLHOJftlUo091166wEXyCi7aRMUbHy4seqm4MYt0NtIQcUog5YHdXJw8LgEERo9Sib9KS86SZBmAR8eWdW9tm7aKIPJszGLzvIPU0UgusUZfBNl8TUn0lJcZR',
+```
+
+<br>
+
+#### Before moving on, this is what we have:
+
+```javascript
+import sanityClient from '@sanity/client'
+
+export const client = sanityClient({
+  // for your project id, go to the sanity
+  projectId: '5qnbllu2',
+  dataset: 'production',
+  apiVersion: '2021-03-25',
+
+  token:
+    'skTfrwARXrAbJMnvDcuj1ImV1E5QQ7bNhCKdUyMujYwjYv8fDuwNoTIrHNfZLHOJftlUo091166wEXyCi7aRMUbHy4seqm4MYt0NtIQcUog5YHdXJw8LgEERo9Sib9KS86SZBmAR8eWdW9tm7aKIPJszGLzvIPU0UgusUZfBNl8TUn0lJcZR',
+  useCdn: false,
+})
+```
+
+<br>
+<br>
+
+#### Now import the sanityClient to the index.jsx
+
+```javascript
+import { useWeb3 } from '@3rdweb/hooks'
+import { useEffect } from 'react'
+import { client } from '../lib/sanityClient' ✋
+```
+
+<br>
+<br>
+
+#### Now we can use it here, where it gaves us the error
+
+```javascript
+// 4 then we tell SANITY, go ahead and create the user if "the user don't exist"
+const result = await client.createIfNotExists(userDoc)
+```
+
+#### Before testing it, delete the localhost from the metamask
+
+- you will notice that after testing it again and checking if we have the **new user** nothing happened, intead we got a **CORS 🔴** error
+
+<br>
+
+[<img src="./z_img-read/error-user-no-created-sanity-CORS.gif"/>]()
+
+<br>
+
+## CORS 🔴
+
+<br>
+
+[<img src="./z_img-read/error-user-no-created-sanity-CORS-2.gif"/>]()
+
+<br>
+
+#### Lets try it again, this time we will check the 'case' of <u>allow credentials</u> to prevent that error to happen
+
+<br>
+
+- As you can see, we successfully ✋ created the user **unnamed**
+
+<br>
+
+[<img src="./z_img-read/error-solved-CORS-3.gif"/>]()
+
+<br>
+
+> **yarn dev** to start server on 3000 and **sanity start** to start server sanity on 3333
+
+#### The unnamed user can be renamed and when you will sign in, it will not overwrite it.
+
+<br>
+
+[<img src="./z_img-read/change-name-user-sanity.gif"/>]()
+
+<br>
+<br>
+
+#### Now lets disconnect again and log in, to see if it will create a new user with the same data we already created the first user.
+
+<br>
+<br>
+
+- NO user duplication, as you can see, it didnt duplicate the **id** , which is the wallet **address** coming from here:
+
+```javascript
+// index.jsx
+//
+//
+        _id: address, ✋
+        userName: 'Unnamed',
+        walletAddress: address,
+      }
+      //
+      // 4 then we tell SANITY, go ahead and create the user if "the user dont exist"
+      const result = await client.createIfNotExists(userDoc) ✋
+
+```
+
+[<img src="./z_img-read/sanity-notduplicated-user-success.gif"/>]()
+
+<br>
+
+##### Check the video on min: [1:00:00](https://youtu.be/x3eRXeMB-4k) , this will show you the last phase of the creation of the user with sanity
+
+<br>
+<br>
+
+---
+
+<br>
+<br>
+
+## Welcome back (notification)
+
+> #### Create a <u>welcome back</u> notification when the user logs'in
+
+<br>
+
+##### import react-hot-toast
+
+#### [npm documentation](https://www.npmjs.com/package/react-hot-toast)
+
+#### [official documentation](https://react-hot-toast.com/docs)
+
+<br>
+
+```javascript
+npm i react-hot-toast
+```
+
+- Add the Toaster to your app first. **It will take care of rendering all notifications emitted**. Now you can trigger toast() from anywhere!
+
+<br>
+
+```javascript
+  "dependencies": {
+    "@3rdweb/hooks": "^1.9.2",
+    "@sanity/client": "^3.2.0",
+    "next": "latest",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hot-toast": "^2.2.0", ✋
+    "react-icons": "^4.3.1"
+  },
+```
+
+<br>
+<br>
+
+#### Import it inside the index.jsx
+
+```javascript
+import toast, { Toaster } from 'react-hot-toast'
+```
+
+#### use it here:
+
+```javascript
+const welcomeUser = (userName, toastHandler = toast) => {
+  toastHandler.success(
+    `Welcome back${userName !== 'Unnamed' ? ` ${userName}` : ''}!`,
+    {
+      style: {
+        background: '#04111d',
+        color: '#fff',
+      },
+    }
+  )
+}
+```
+
+#### than here:
+
+```javascript
+      // 7
+      welcomeUser(result.userName)
+
+      //
+      //
+      // 5 the we call the function right away
+    })()
+```
+
+<br>
+
+#### And here:
+
+```javascript
+<div className={style.wrapper}>
+✋
+      <Toaster position="top-center" reverseOrder={false} />
+
+      {address ? (
+        <>
+          <Header />
+          <Hero />
+```
+
+<br>
+
+#### result
+
+<br>
+
+[<img src="./z_img-read/toaster-notification-in-action.gif"/>]()
