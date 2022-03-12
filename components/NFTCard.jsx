@@ -58,6 +58,13 @@ and 2 if our listing matches our **nft item**.
   }, [nftItem, listings])
   //
   return (
+    /*
+    
+    - the onclick function here, serves to redirect 
+    us to that asset path, as you can see it 
+    here **pathname: `/nfts/${nftItem.id}`**
+    
+    */
     <div
       className={style.wrapper}
       onClick={() => {
@@ -70,6 +77,8 @@ and 2 if our listing matches our **nft item**.
       <div className={style.imgContainer}>
         <img src={nftItem.image} alt={nftItem.name} className={style.nftImg} />
       </div>
+      <div className={style.details}>hello details</div>
+      {/*  */}
     </div>
   )
 }

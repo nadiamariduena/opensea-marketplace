@@ -1300,10 +1300,11 @@ return (
 
 <br>
 
-#### now build the image container
+#### now build the image container and also start with the description of the nft card
 
 ```javascript
-<div className={style.imgContainer}>
-  <img src={nftItem.image} alt={nftItem.name} className={style.nftImg} />
-</div>
+  <div className={style.imgContainer}>
+        <img src={nftItem.image} alt={nftItem.name} className={style.nftImg} />
+      </div>
+      <div className={style.details}>hello details</div>
 ```
