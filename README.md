@@ -386,7 +386,7 @@ useEffect(() => {
 
 #### There we will need to generate the following:
 
-- This is from the [original repository](https://github.com/CleverProgrammers/opensea-blockchain-youtube/blob/main/pages/collections/%5BcollectionId%5D.js) but **you need your own, with your own data** , so dont copy and paste it as it will give your errors, since the **url contains an image that you need to generate in sanity**
+- The code below is from the [original repository](https://github.com/CleverProgrammers/opensea-blockchain-youtube/blob/main/pages/collections/%5BcollectionId%5D.js) but **you need your own, with your own data** , so dont copy and paste it as it will give your errors, since the **url contains an image that you need to generate in sanity**
 
 <br>
 
@@ -455,6 +455,176 @@ Vision is a plugin that lets you quickly test your GROQ queries right from the S
 }
 ```
 
+> **This means the following:** get me "marketItems" type, and if the contract address is equal to this: 0xB4D9B62983AD4027533905D1DbFcEE732Bc0CEC7 , then get me whatever i ask inside the curly brackets
+
 <br>
 
 [<img src="./z_img-read/sanity-generating-query2.gif"/>]()
+
+<br>
+
+#### Here you will see that whatever we put inside the curly brackets is going to give us something once we click <u>FETCH</u> (of course whatever related to the data we just added)
+
+<br>
+
+[<img src="./z_img-read/sanity-generating-query3.gif"/>]()
+
+<br>
+
+### Now lets use it inside the code
+
+- copy the query from sanity
+
+```javascript
+//this is my query with my own data
+*[_type == "marketItems" && contractAddress == "0xB4D9B62983AD4027533905D1DbFcEE732Bc0CEC7"]{
+   "imageUrl": profileImage.asset->url,
+      "bannerImageUrl": bannerImage.asset->url,
+      volumeTraded,
+      createdBy,
+      contractAddress,
+      "creator": createdBy->userName,
+      title, floorPrice,
+      "allOwners": owners[]->,
+      description
+}
+```
+
+<br>
+
+#### And paste it here, under the step 4, but hide the query code as we have to do a couple of things before that.
+
+```javascript
+//4 get all listings in the collection
+//
+useEffect(() => {
+  if (!marketPlaceModule) return
+  ;(async () => {
+    setListings(await marketPlaceModule.getAllListings())
+  })()
+}, [marketPlaceModule])
+//
+// 5 the query from sanity
+
+//   const query = `*[_type == "marketItems" && contractAddress == "0xB4D9B62983AD4027533905D1DbFcEE732Bc0CEC7"]{
+//   "imageUrl": profileImage.asset->url,
+//      "bannerImageUrl": bannerImage.asset->url,
+//      volumeTraded,
+//      createdBy,
+//      contractAddress,
+//      "creator": createdBy->userName,
+//      title, floorPrice,
+//      "allOwners": owners[]->,
+//      description
+// }`
+```
+
+<br>
+<br>
+
+### Create the function that is going to nest the query, since its an API it has to be nested in an ASYNC await function
+
+```javascript
+const fetchCollectionData = async (sanityClient = client, collectionId) => {
+  const query = `*[_type == "marketItems" && contractAddress == "${collectionId}" ]`
+
+  const collectionData = await sanityClient.fetch(query)
+
+  // the query returns 1 object inside of an array
+  await setCollection(collectionData[0])
+}
+```
+
+<br>
+<br>
+
+### Now you can use it like so
+
+- As you can notice, the **id** is not longer **hardcoded**
+
+```javascript
+const { provider } = useWeb3()
+const { collectionId } = router.query 👍
+const [collection, setCollection] = useState({})
+//
+//
+//
+const fetchCollectionData = async (
+  sanityClient = client,
+  collectionId = collectionId ✋
+) => {
+  const query = `*[_type == "marketItems" && contractAddress == "${collectionId ✋}" ] {
+      "imageUrl": profileImage.asset->url,
+      "bannerImageUrl": bannerImage.asset->url,
+      volumeTraded,
+      createdBy,
+      contractAddress,
+      "creator": createdBy->userName,
+      title, floorPrice,
+      "allOwners": owners[]->,
+      description
+    }`
+  //
+  //
+  const collectionData = await sanityClient.fetch(query)
+
+  // the query returns 1 object inside of an array
+  await  ✋ setCollection(collectionData[0])
+}
+```
+
+<br>
+
+#### Now add a last useEffect
+
+```javascript
+useEffect(() => {
+  fetchCollectionData()
+}, [collectionId])
+```
+
+<br>
+
+### 🔴 We are going to get some errors, to prevent them , add the following:
+
+<br>
+
+#### import the following
+
+```javascript
+import { client } from '../../lib/sanityClient'
+import { ThirdwebSDK } from '@3rdweb/sdk'
+```
+
+<br>
+
+#### Install the sdk
+
+```javascript
+npm i @3rdweb/sdk
+```
+
+#### This is what you should have:
+
+```javascript
+  "dependencies": {
+    "@3rdweb/hooks": "^1.9.2",
+    "@3rdweb/sdk": "^1.42.0",
+    "@sanity/client": "^3.2.0",
+    "next": "latest",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hot-toast": "^2.2.0",
+    "react-icons": "^4.3.1"
+  },
+```
+
+<br>
+
+#### With this we shouldnt have any other issues (for now)
+
+- Lets test it 🔥
+
+<br>
+
+[<img src="./z_img-read/qhery-and-api-integration-success.gif"/>]()

@@ -4,6 +4,8 @@ import Link from 'next/link'
 
 //
 import { useWeb3 } from '@3rdweb/hooks'
+import { client } from '../../lib/sanityClient'
+import { ThirdwebSDK } from '@3rdweb/sdk'
 //
 //
 //
@@ -73,6 +75,37 @@ and than we are going to return the
       setListings(await marketPlaceModule.getAllListings())
     })()
   }, [marketPlaceModule])
+  //
+
+  //
+  //5
+  const fetchCollectionData = async (
+    sanityClient = client,
+    collectionId = collectionId
+  ) => {
+    const query = `*[_type == "marketItems" && contractAddress == "${collectionId}" ] {
+      "imageUrl": profileImage.asset->url,
+      "bannerImageUrl": bannerImage.asset->url,
+      volumeTraded,
+      createdBy,
+      contractAddress,
+      "creator": createdBy->userName,
+      title, floorPrice,
+      "allOwners": owners[]->,
+      description
+    }`
+    //
+    //
+    const collectionData = await sanityClient.fetch(query)
+
+    // the query returns 1 object inside of an array
+    await setCollection(collectionData[0])
+  }
+  //
+  //
+  useEffect(() => {
+    fetchCollectionData()
+  }, [collectionId])
 
   /*
   
