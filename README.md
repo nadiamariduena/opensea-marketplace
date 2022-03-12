@@ -250,3 +250,101 @@ const [listings, setListings] = useState([])
 
 <br>
 <br>
+
+# 🐄
+
+#### Now lets create a function that will help us to get access to the <u>NFT module</u>
+
+##### [Build OpenSea Blockchain Web 3.0 App with Next.js | Sanity.io | thirdweb](https://youtu.be/x3eRXeMB-4k?t=4126)
+
+<br>
+
+> In this function we will use **Memo** , memo is kind of like a **useEffect** but also has some caching (cache) build into it.
+
+```javascript
+const nftModule = useMemo(() => {
+  //
+})
+```
+
+### Memo functions 🌞
+
+> Memoization is an optimization technique that speeds up applications by storing the results of expensive function calls and returning the cached result when the same inputs are supplied again.
+
+<br>
+
+> (Or **"memoised function"**) A function that remembers which arguments it has been called with and the result returned and, if called with the same arguments again, returns the result from its memory rather than recalculating it. Memo functions were invented by Professor Donald Michie of Edinburgh University.s
+
+<br>
+
+## Lets continue
+
+##### In the tutorial he didnt explain how to get the api key from infura, so go there and create an app like you did with the alchemy one, once the app is done you will have api's to use, but here below we will be using the <u>alchemy one</u>.
+
+<br>
+
+- the dependency is going to be the provider, so if the provider **dont exist** return it, otherwise e are going to create a thirdweb sdk: **new ThirdwebSDK**, to get our signer **provider.getSigner()**, and we are going to use our API key: **h ttps://eth-rinkeby...**, and than we are going to return the NFT MODULE: **sdk.getNFTModule(collectionId)**
+
+<br>
+
+```javascript
+const nftModule = useMemo(() => {
+  if (!provider) return
+
+  const sdk = new ThirdwebSDK(
+    provider.getSigner(),
+    'https://eth-rinkeby.alchemyapi.io/v2/oneD5PzlO3p18PfmfbguZhfsDWCUvhI2'
+  )
+  return sdk.getNFTModule(collectionId)
+}, [provider])
+```
+
+<br>
+<br>
+
+#### Now lets get another function that gets all the nft's inside a collection
+
+- the dependency is going to be this **[nftModule]**, so whenever a nftModule is loaded from here **const nftModule** (the function above), this is **useEffect** will run, but if the **(!nftModule)** dont exist then we are going to return it, but if does exist we are going the **IIFE (Immediately Invoked Function Expression)** that is going to call itself immediately and when it happens, we will be getting the nfts, this will update the nft's variable here: **setNfts(nfts)**
+
+<br>
+
+```javascript
+useEffect(() => {
+  if (!nftModule) return
+  ;(async () => {
+    const nfts = await nftModule.getAll()
+
+    setNfts(nfts)
+  })()
+}, [nftModule])
+```
+
+<br>
+
+## Marketplace
+
+<br>
+
+#### Now we are going to get access to the marketplace module
+
+- Like you see it here in the beginning of the gif
+
+[<img src="./z_img-read/states-to-get-access-thecollection.gif"/>]()
+
+<br>
+
+```javascript
+const marketPlaceModule = useMemo(() => {
+  if (!provider) return
+
+  const sdk = new ThirdwebSDK(
+    provider.getSigner(),
+    'https://rinkeby.infura.io/v3/a464b9152d8c466c8a94a514fce8e837'
+  )
+  return sdk.getMarketplaceModule('0xCdA1334a27C272c7cFF02bc2CC1563b60e540402')
+}, [provider])
+```
+
+<br>
+
+[<img src="./z_img-read/opensea-marketplace-id.gif"/>]()
