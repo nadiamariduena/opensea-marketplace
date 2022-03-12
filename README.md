@@ -1254,18 +1254,56 @@ const NFTCard = ({ nftItem, title, listings }) => {
 <br>
 <br>
 
-##### then we are going to loop through all of our listings
+#### then 1. we are going to loop through all of our listings
 
-- and if our listing matches our **nft item**
+- and 2 if our listing matches our **nft item**. 3 then we are going to set our listing to **true**, 4 we are going to set the price by **pulling it out of the listing**. 5 and then we are going to break
 
 ```javascript
 useEffect(() => {
+  //1
   for (const listing of listings) {
+    //2
     if (listing.asset.id === nftItem.id) {
+      //3
       setIsListed(true)
+      //4
       setPrice(listing.buyoutCurrencyValuePerToken.displayValue)
+      //5
       break
     }
   }
 }, [nftItem, listings])
+```
+
+<br>
+<br>
+
+### Now lets build out the component
+
+- the onclick function here, serves to redirect us to that asset path, as you can see it here **pathname: `/nfts/${nftItem.id}`**
+
+```javascript
+return (
+  <div
+    className={style.wrapper}
+    //
+    onClick={() => {
+      Router.push({
+        pathname: `/nfts/${nftItem.id}`,
+        query: { isListed: isListed },
+      })
+    }}
+    //
+  ></div>
+)
+```
+
+<br>
+
+#### now build the image container
+
+```javascript
+<div className={style.imgContainer}>
+  <img src={nftItem.image} alt={nftItem.name} className={style.nftImg} />
+</div>
 ```

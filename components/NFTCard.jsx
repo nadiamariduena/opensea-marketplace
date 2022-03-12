@@ -32,18 +32,46 @@ const NFTCard = ({ nftItem, title, listings }) => {
   const [isListed, setIsListed] = useState(false)
   const [price, setPrice] = useState(0)
 
-  //
+  /*
+  
+then 1. we are going to loop through all of our listings,
+and 2 if our listing matches our **nft item**. 
+3 then we are going to set our listing to **true**, 
+4 we are going to set the price by **pulling it out of the listing**. 
+5 and then we are going to break
+  
+  
+  */
   useEffect(() => {
+    //1
     for (const listing of listings) {
+      //2
       if (listing.asset.id === nftItem.id) {
+        //3
         setIsListed(true)
+        //4
         setPrice(listing.buyoutCurrencyValuePerToken.displayValue)
+        //5
         break
       }
     }
   }, [nftItem, listings])
   //
-  return <img src={nftItem.image} />
+  return (
+    <div
+      className={style.wrapper}
+      onClick={() => {
+        Router.push({
+          pathname: `/nfts/${nftItem.id}`,
+          query: { isListed: isListed },
+        })
+      }}
+    >
+      <div className={style.imgContainer}>
+        <img src={nftItem.image} alt={nftItem.name} className={style.nftImg} />
+      </div>
+    </div>
+  )
 }
 
 export default NFTCard
