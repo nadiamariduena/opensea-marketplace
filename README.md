@@ -196,13 +196,7 @@ const [listings, setListings] = useState([])
 
 > ##### "Another service that you will use is INFURA which is an API that runs ethereum clients for you."
 
-  <br>
-
-#### 🐖 its not easy to run ethereum client, so infura is very useful when you want to send a transaction to mainnet
-
-<br>
-
----
+##### ⚠️ its not easy to run ethereum client, so infura is very useful when you want to send a transaction to mainnet
 
 <br>
 
@@ -219,3 +213,40 @@ const [listings, setListings] = useState([])
 > “Right now people are trying to build skyscrapers with picks and shovels. We need to give them construction equipment,” Alchemy co-founder and CEO Nikil Viswanathan tells me. “None of this exists for blockchain.”
 
 ##### read more: [Alchemy is secretly fising blockchain nightmare](https://consent.yahoo.com/v2/collectConsent?sessionId=3_cc-session_f0f9b10d-bde1-442d-a23d-c50d9a4bd975)
+
+<br>
+
+- So this is how they look like, but its not over yet
+
+[<img src="./z_img-read/infura-alchemy.gif"/>]()
+
+<br>
+<br>
+
+#### Complete the account with [ALCHEMY](https://www.alchemy.com/)
+
+[<img src="./z_img-read/alchemy-completing-account.gif"/>]()
+
+<br>
+
+#### While in Alchemy, create a <u>new app</u>
+
+- Grab the **http key** (in the img i took the other one, but you have to take the http one)
+
+<br>
+
+- 🔴 I will be deleting this at the end of the project, so its useless for you to copy it
+
+```javascript
+// HTTP KEY:   https://eth-rinkeby.alchemyapi.io/v2/oneD5PzlO3p18PfmfbguZhfsDWCUvhI2
+```
+
+[<img src="./z_img-read/alchemy-api.gif"/>]()
+
+<br>
+<br>
+
+---
+
+<br>
+<br>

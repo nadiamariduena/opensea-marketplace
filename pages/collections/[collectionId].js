@@ -6,7 +6,8 @@ import Link from 'next/link'
 import { useWeb3 } from '@3rdweb/hooks'
 
 //
-//
+//API KEY  oneD5PzlO3p18PfmfbguZhfsDWCUvhI2
+// HTTP KEY:   https://eth-rinkeby.alchemyapi.io/v2/oneD5PzlO3p18PfmfbguZhfsDWCUvhI2
 
 const collection = () => {
   const router = useRouter()
