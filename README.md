@@ -62,4 +62,10 @@
 
 # 🍨 🥭
 
+<br>
+
+# Collections
+
+#### Now we need to get back to the collections, if you remember we already started it a bit [Here](https://github.com/nadiamariduena/opensea-marketplace/tree/4-header-tailwing-routing), so now we need to make it work:
+
 <!-- [<img src="./z_img-read/toaster-notification-in-action.gif"/>]() -->
