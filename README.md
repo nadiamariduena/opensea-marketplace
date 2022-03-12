@@ -820,3 +820,33 @@ const result = await client.createIfNotExists(userDoc)
 
 <br>
 <br>
+
+## Welcome back (notification)
+
+> #### Create a <u>welcome back</u> notification when the user logs'in
+
+<br>
+
+##### import react-hot-toast
+
+#### [documentation](https://www.npmjs.com/package/react-hot-toast)
+
+```javascript
+npm i react-hot-toast
+```
+
+- Add the Toaster to your app first. **It will take care of rendering all notifications emitted**. Now you can trigger toast() from anywhere!
+
+<br>
+
+```javascript
+  "dependencies": {
+    "@3rdweb/hooks": "^1.9.2",
+    "@sanity/client": "^3.2.0",
+    "next": "latest",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hot-toast": "^2.2.0", ✋
+    "react-icons": "^4.3.1"
+  },
+```
