@@ -230,7 +230,6 @@ Users can use Etherscan to:
 
 <br>
 
-
 ---
 
 <br>
@@ -400,3 +399,7 @@ ERC1155 is a novel token standard that aims to take the best from previous stand
 ---
 
 <br>
+
+### What is trade volume?
+
+- Volume of trade is the total quantity of shares or contracts traded for a specified security. It can be measured on any type of security traded during a trading day. Volume of trade or trade volume is measured on stocks, bonds, options contracts, futures contracts, and all types of commodities.
