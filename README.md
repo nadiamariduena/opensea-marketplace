@@ -1201,12 +1201,12 @@ const style = {
 //
 //
 
-const NFTCard = ({ nftItem }) => {
+const NFTCard = ({ nftItem, title, listing }) => {
   //
   //
 
-  const [isListed, setIsListed] = useState(false)
-  const [price, setPrice] = useState(0)
+  const [isListed, setIsListed] = useState(false) ✋
+  const [price, setPrice] = useState(0) ✋
 
   //
   //
@@ -1214,4 +1214,58 @@ const NFTCard = ({ nftItem }) => {
 }
 
 export default NFTCard
+```
+
+<br>
+
+#### Now we have to thing in the logic "in case there are not nft listed"
+
+- **for example:** if we have 4 NFT'S 1 or 2 might not be listed
+
+> **Listed** meaning you have them for sale in the **marketplace**, meaning that you went to the 3web platform and you put them and **listed** for sale
+
+<br>
+
+#### What we need to do, is we need to find where the matches are..we need to filter the items that are not listed and get them out from the users <u>possibilities</u>
+
+#### check the video, as it can be complicated [1:30:07](https://youtu.be/x3eRXeMB-4k?t=5407)
+
+<br>
+<br>
+<br>
+
+### Lets add the useEffect
+
+- This useEffect is going to have 2 dependencies: **[nftItem, listings]** that is going to fire when it sees un update
+
+```javascript
+
+const NFTCard = ({ nftItem, title, listings }) => {
+  //
+  //
+
+  const [isListed, setIsListed] = useState(false)
+  const [price, setPrice] = useState(0)
+
+  //
+  useEffect(() => {}, [nftItem, listings])
+```
+
+<br>
+<br>
+
+##### then we are going to loop through all of our listings
+
+- and if our listing matches our **nft item**
+
+```javascript
+useEffect(() => {
+  for (const listing of listings) {
+    if (listing.asset.id === nftItem.id) {
+      setIsListed(true)
+      setPrice(listing.buyoutCurrencyValuePerToken.displayValue)
+      break
+    }
+  }
+}, [nftItem, listings])
 ```

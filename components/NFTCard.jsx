@@ -25,7 +25,7 @@ const style = {
 //
 //
 
-const NFTCard = ({ nftItem }) => {
+const NFTCard = ({ nftItem, title, listings }) => {
   //
   //
 
@@ -33,6 +33,15 @@ const NFTCard = ({ nftItem }) => {
   const [price, setPrice] = useState(0)
 
   //
+  useEffect(() => {
+    for (const listing of listings) {
+      if (listing.asset.id === nftItem.id) {
+        setIsListed(true)
+        setPrice(listing.buyoutCurrencyValuePerToken.displayValue)
+        break
+      }
+    }
+  }, [nftItem, listings])
   //
   return <img src={nftItem.image} />
 }
