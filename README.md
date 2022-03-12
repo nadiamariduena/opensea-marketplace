@@ -817,3 +817,31 @@ const NFTCard = ({ nftItem }) => {
 
 export default NFTCard
 ```
+
+#### now import it inside the collection component
+
+```javascript
+import NFTCard from '../../components/NFTCard'
+```
+
+<br>
+<br>
+
+- if the **collection?.bannerImageUrl** if the banner Img exist then show it **collection.bannerImageUrl** else show just a placeholder **https://via.placeholder.com/200**
+
+```javascript
+<div className="overflow-hidden">
+  <Header />
+  <div className={style.bannerImageContainer}>
+    <img
+      className={style.bannerImage}
+      src={
+        collection?.bannerImageUrl
+          ? collection.bannerImageUrl
+          : 'https://via.placeholder.com/200'
+      }
+      alt="banner"
+    />
+  </div>
+</div>
+```
