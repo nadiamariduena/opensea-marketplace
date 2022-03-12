@@ -467,7 +467,7 @@ return (
 <br>
 <br>
 
-# Sanity
+# Sanity.io
 
 <br>
 <br>
@@ -808,3 +808,15 @@ const result = await client.createIfNotExists(userDoc)
 ```
 
 [<img src="./z_img-read/sanity-notduplicated-user-success.gif"/>]()
+
+<br>
+
+##### Check the video on min: [1:00:00](https://youtu.be/x3eRXeMB-4k) , this will show you the last phase of the creation of the user with sanity
+
+<br>
+<br>
+
+---
+
+<br>
+<br>
