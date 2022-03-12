@@ -400,6 +400,33 @@ ERC1155 is a novel token standard that aims to take the best from previous stand
 
 <br>
 
+## What is a good floor price for NFT?
+
+- Floor price - sometimes also referred to as "price floor" - is a term that originates from commodity trading and refers to the lowest price, rather than the average price, at which an NFT can be bought.
+
+##### [Floor price | opensea ](https://support.opensea.io/hc/en-us/articles/4405171313171-What-is-a-floor-price-#:~:text=One%20of%20the%20most%20requested,is%20updated%20in%20real%2Dtime.)
+
+<br>
+
+> Floor price is the lowest price for collection items, rather than the average item price, and is updated in real-time. Dutch auctions are not included in floor price calculations.
+
+<br>
+<br>
+
+---
+
+<br>
+
 ### What is trade volume?
 
 - Volume of trade is the total quantity of shares or contracts traded for a specified security. It can be measured on any type of security traded during a trading day. Volume of trade or trade volume is measured on stocks, bonds, options contracts, futures contracts, and all types of commodities.
+
+##### KEY TAKEAWAYS
+
+- The volume of trade refers to the total number of shares or contracts exchanged between buyers and sellers of a security during trading hours on a given day.
+
+- The volume of trade is a measure of the market's activity and liquidity during a set period of time.
+
+- Higher trading volumes are considered more positive than lower trading volumes because they mean more liquidity and better order execution.
+
+#### [Volume of Trade](https://www.investopedia.com/terms/v/volumeoftrade.asp)
