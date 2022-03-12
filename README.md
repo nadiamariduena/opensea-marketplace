@@ -791,6 +791,20 @@ const result = await client.createIfNotExists(userDoc)
 <br>
 <br>
 
-- NO user duplication, so all is working well
+- NO user duplication, as you can see, it didnt duplicate the **id** , which is the wallet **address** coming from here:
+
+```javascript
+// index.jsx
+//
+//
+        _id: address, ✋
+        userName: 'Unnamed',
+        walletAddress: address,
+      }
+      //
+      // 4 then we tell SANITY, go ahead and create the user if "the user dont exist"
+      const result = await client.createIfNotExists(userDoc) ✋
+
+```
 
 [<img src="./z_img-read/sanity-notduplicated-user-success.gif"/>]()
