@@ -199,3 +199,23 @@ const [listings, setListings] = useState([])
   <br>
 
 #### 🐖 its not easy to run ethereum client, so infura is very useful when you want to send a transaction to mainnet
+
+<br>
+
+---
+
+<br>
+
+#### Once you have your [INFURA ](https://infura.io/) account, open an [ALCHEMY](https://www.alchemy.com/) account
+
+<br>
+
+#### How does Alchemy work?
+
+> It replaces the **nodes** that businesses use to read and write blockchains with a faster, more scalable decentralized architecture. **It also provides tools for analytics, monitoring, alerting, logging and debugging for cryptocurrency-connected software**
+
+<br>
+
+> “Right now people are trying to build skyscrapers with picks and shovels. We need to give them construction equipment,” Alchemy co-founder and CEO Nikil Viswanathan tells me. “None of this exists for blockchain.”
+
+##### read more: [Alchemy is secretly fising blockchain nightmare](https://consent.yahoo.com/v2/collectConsent?sessionId=3_cc-session_f0f9b10d-bde1-442d-a23d-c50d9a4bd975)

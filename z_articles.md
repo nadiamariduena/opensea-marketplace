@@ -216,9 +216,43 @@ Users can use Etherscan to:
 <br>
 <br>
 
+# 🌈 [INFURA ](https://infura.io/)
+
+<br>
+
 ### <u>Another service</u> that you will use is [INFURA](https://infura.io/) which is an API that runs ethereum clients for you.
 
 - its not easy to run ethereum client, so infura is very useful when you want to send a transaction to **mainnet**
+
+<br>
+
+- "Our suite of high availability **APIs** and Developer Tools provide quick, reliable access to the Ethereum and **IPFS networks** so you can focus on building and scaling next generation software."
+
+<br>
+
+
+---
+
+<br>
+
+#### Once you have your [INFURA ](https://infura.io/) account, open an [ALCHEMY](https://www.alchemy.com/) account
+
+<br>
+
+#### How does Alchemy work?
+
+> It replaces the **nodes** that businesses use to read and write blockchains with a faster, more scalable decentralized architecture. **It also provides tools for analytics, monitoring, alerting, logging and debugging for cryptocurrency-connected software**
+
+<br>
+
+> “Right now people are trying to build skyscrapers with picks and shovels. We need to give them construction equipment,” Alchemy co-founder and CEO Nikil Viswanathan tells me. “None of this exists for blockchain.”
+
+##### read more: [Alchemy is secretly fising blockchain nightmare](https://consent.yahoo.com/v2/collectConsent?sessionId=3_cc-session_f0f9b10d-bde1-442d-a23d-c50d9a4bd975)
+
+<br>
+<br>
+
+---
 
 <br>
 <br>
