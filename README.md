@@ -935,9 +935,6 @@ const style = {
 }
 
 //
-//
-//
-//
 const collection = () => {
   const router = useRouter()
   //
@@ -946,9 +943,6 @@ const collection = () => {
   const [collection, setCollection] = useState({})
   const [nfts, setNfts] = useState([])
   const [listings, setListings] = useState([])
-  //
-  //
-  //
 
   /*
 1
@@ -1005,7 +999,6 @@ and than we are going to return the
     })()
   }, [marketPlaceModule])
   //
-
   //
   //5
   const fetchCollectionData = async (sanityClient = client) => {
@@ -1033,12 +1026,6 @@ and than we are going to return the
     fetchCollectionData()
   }, [collectionId])
 
-  /*
-  
-  
-  
-  
-  */
   // console.log(router.query)
   // console.log(router.query.collectionId)
   //
@@ -1132,14 +1119,7 @@ and than we are going to return the
               </div>
               <div className={style.statName}>floor price</div>
             </div>
-            {/* ----volume traded---
-            
-            
-What is trade volume?
-
-Volume of trade is the total quantity of shares or contracts traded for a specified security. It can be measured on any type of security traded during a trading day. Volume of trade or trade volume is measured on stocks, bonds, options contracts, futures contracts, and all types of commodities.
-            
-            */}
+            {/* ----volume traded---  */}
             <div className={style.collectionStat}>
               <div className={style.statValue}>
                 <img
@@ -1164,7 +1144,7 @@ Volume of trade is the total quantity of shares or contracts traded for a specif
         </div>
       </div>
 
-      {/* ------- */}
+      {/* ----THE NFT CARDS --- */}
       <div className=" flex flex-wrap items-center justify-around">
         {nfts.map((nftItem, id) => (
           <NFTCard
@@ -1182,4 +1162,56 @@ Volume of trade is the total quantity of shares or contracts traded for a specif
 export default collection
 ```
 
+<br>
+
 [<img src="./z_img-read/result-collection.gif"/>]()
+
+<br>
+<br>
+
+### Lets continue with the card styling
+
+- Here we will also add 2 props to keep track of the **Listing and the price**
+
+```javascript
+import React from 'react'
+import { useEffect, useState } from 'react'
+import { BiHeart } from 'react-icons/bi'
+import Router from 'next/router'
+//
+//
+//
+
+const style = {
+  wrapper: `bg-[#303339] flex-auto w-[14rem] h-[22rem] my-10 mx-5 rounded-2xl overflow-hidden cursor-pointer`,
+  imgContainer: `h-2/3 w-full overflow-hidden flex justify-center items-center`,
+  nftImg: `w-full object-cover`,
+  details: `p-3`,
+  info: `flex justify-between text-[#e4e8eb] drop-shadow-xl`,
+  infoLeft: `flex-0.6 flex-wrap`,
+  collectionName: `font-semibold text-sm text-[#8a939b]`,
+  assetName: `font-bold text-lg mt-2`,
+  infoRight: `flex-0.4 text-right`,
+  priceTag: `font-semibold text-sm text-[#8a939b]`,
+  priceValue: `flex items-center text-xl font-bold mt-2`,
+  ethLogo: `h-5 mr-2`,
+  likes: `text-[#8a939b] font-bold flex items-center w-full justify-end mt-3`,
+  likeIcon: `text-xl mr-2`,
+}
+//
+//
+
+const NFTCard = ({ nftItem }) => {
+  //
+  //
+
+  const [isListed, setIsListed] = useState(false)
+  const [price, setPrice] = useState(0)
+
+  //
+  //
+  return <img src={nftItem.image} />
+}
+
+export default NFTCard
+```
