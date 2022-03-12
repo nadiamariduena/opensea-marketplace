@@ -829,7 +829,11 @@ const result = await client.createIfNotExists(userDoc)
 
 ##### import react-hot-toast
 
-#### [documentation](https://www.npmjs.com/package/react-hot-toast)
+#### [npm documentation](https://www.npmjs.com/package/react-hot-toast)
+
+#### [official documentation](https://react-hot-toast.com/docs)
+
+<br>
 
 ```javascript
 npm i react-hot-toast
@@ -849,4 +853,56 @@ npm i react-hot-toast
     "react-hot-toast": "^2.2.0", ✋
     "react-icons": "^4.3.1"
   },
+```
+
+<br>
+<br>
+
+#### Import it inside the index.jsx
+
+```javascript
+import toast, { Toaster } from 'react-hot-toast'
+```
+
+#### use it here:
+
+```javascript
+const welcomeUser = (userName, toastHandler = toast) => {
+  toastHandler.success(
+    `Welcome back${userName !== 'Unnamed' ? ` ${userName}` : ''}!`,
+    {
+      style: {
+        background: '#04111d',
+        color: '#fff',
+      },
+    }
+  )
+}
+```
+
+#### than here:
+
+```javascript
+      // 7
+      welcomeUser(result.userName)
+
+      //
+      //
+      // 5 the we call the function right away
+    })()
+```
+
+<br>
+
+#### And here:
+
+```javascript
+<div className={style.wrapper}>
+✋
+      <Toaster position="top-center" reverseOrder={false} />
+
+      {address ? (
+        <>
+          <Header />
+          <Hero />
 ```

@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 import { client } from '../lib/sanityClient'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
-
+import toast, { Toaster } from 'react-hot-toast'
 //
 //
 const style = {
@@ -19,6 +19,21 @@ const Home = () => {
   //
   //
   const { address, connectWallet } = useWeb3()
+
+  // related to the notification with the toast
+  // 6
+  const welcomeUser = (userName, toastHandler = toast) => {
+    toastHandler.success(
+      `Welcome back${userName !== 'Unnamed' ? ` ${userName}` : ''}!`,
+      {
+        style: {
+          background: '#04111d',
+          color: '#fff',
+        },
+      }
+    )
+  }
+  //
 
   //
   useEffect(() => {
@@ -38,7 +53,12 @@ const Home = () => {
       //
       // 4 then we tell SANITY, go ahead and create the user if "the user dont exist"
       const result = await client.createIfNotExists(userDoc)
+      //
+      // 7
+      welcomeUser(result.userName)
 
+      //
+      //
       // 5 the we call the function right away
     })()
     //
@@ -47,6 +67,11 @@ const Home = () => {
   //
   return (
     <div className={style.wrapper}>
+      <Toaster position="top-center" reverseOrder={false} />
+      {/* 
+      
+      
+      */}
       {address ? (
         <>
           <Header />
