@@ -348,3 +348,89 @@ const marketPlaceModule = useMemo(() => {
 <br>
 
 [<img src="./z_img-read/opensea-marketplace-id.gif"/>]()
+
+<br>
+
+## Listings
+
+#### Now lets get all the listings inside the collection, we will be using another useEffect, this useEffect will look for a marketplace module..
+
+- This will practically do the same process, it will check if we have a **!marketPlaceModule** and if it don't, then it will return it, but if it does, then call the **iife** run it immediately and we will **set** all the listings **setListings** to: the listings that we actually get from the marketplace **marketPlaceModule.getAllListings()**, so as soon as we get the "we set them"
+
+<br>
+
+```javascript
+// get all listings in the collection
+useEffect(() => {
+  if (!marketPlaceModule) return
+  ;(async () => {
+    setListings(await marketPlaceModule.getAllListings())
+  })()
+}, [marketPlaceModule])
+```
+
+<br>
+<br>
+
+### Now lets go to your [SANITY.IO](http://localhost:3333/)
+
+##### at : http://localhost:3333/
+
+> **yarn dev** to start server on 3000
+
+> and **sanity start** to start server sanity on 3333
+
+<br>
+
+# ⚠️
+
+#### There we will need to generate the following:
+
+- This is from the [original repository](https://github.com/CleverProgrammers/opensea-blockchain-youtube/blob/main/pages/collections/%5BcollectionId%5D.js) but **you need your own, with your own data** , so dont copy and paste it as it will give your errors, since the **url contains an image that you need to generate in sanity**
+
+<br>
+
+```javascript
+const fetchCollectionData = async (sanityClient = client) => {
+    const query = `*[_type == "marketItems" && contractAddress == "${collectionId}" ] {
+      "imageUrl": profileImage.asset->url,
+      "bannerImageUrl": bannerImage.asset->url,
+      volumeTraded,
+      createdBy,
+      contractAddress,
+      "creator": createdBy->userName,
+      title, floorPrice,
+      "allOwners": owners[]->,
+      description
+    }`
+```
+
+<br>
+
+### So lets go to sanity to do it:
+
+<br>
+
+- Click on **Market Items** , click on the icon with the pencil
+
+<br>
+
+- Go to the **thirdweb** and grab the nft collection name and paste it in **title** (in sanity)
+
+<br>
+
+- take the id from the nft collection in thirdwaeb, then paste it inside the sanity **contract address**
+
+- Add a description, volume traded, floor price
+
+<br>
+
+- Add a created by
+
+<br>
+
+- add **Owners**, if there are many you can add them as well
+
+<br>
+
+[<img src="./z_img-read/sanity-generating-query1.gif"/>]()

@@ -53,7 +53,7 @@ and than we are going to return the
   }, [nftModule])
   //
   //
-
+  // 3
   const marketPlaceModule = useMemo(() => {
     if (!provider) return
 
@@ -62,9 +62,24 @@ and than we are going to return the
       'https://eth-rinkeby.alchemyapi.io/v2/oneD5PzlO3p18PfmfbguZhfsDWCUvhI2'
     )
     return sdk.getMarketplaceModule(
-      '0x93A771F7ce845C33381f677489cF21a5964EDD0b'
+      '0xCdA1334a27C272c7cFF02bc2CC1563b60e540402'
     )
   }, [provider])
+
+  //4 get all listings in the collection
+  useEffect(() => {
+    if (!marketPlaceModule) return
+    ;(async () => {
+      setListings(await marketPlaceModule.getAllListings())
+    })()
+  }, [marketPlaceModule])
+
+  /*
+  
+  
+  
+  
+  */
   // console.log(router.query)
   // console.log(router.query.collectionId)
   //
