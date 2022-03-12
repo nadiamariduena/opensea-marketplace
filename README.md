@@ -628,3 +628,29 @@ npm i @3rdweb/sdk
 <br>
 
 [<img src="./z_img-read/qhery-and-api-integration-success.gif"/>]()
+
+<br>
+<br>
+
+### Now check if you are receiving the data
+
+<br>
+
+- 🔴 remove the collectionId, as it was giving me an empty array
+
+```javascript
+// before
+const fetchCollectionData = async (
+  sanityClient = client,
+  collectionId = collectionId ✋
+) => {
+
+// after
+const fetchCollectionData = async (sanityClient = client) => {
+```
+
+<br>
+
+- dont worry about the sockets errors, its because i disconnected from the server
+
+[<img src="./z_img-read/receiving-the-data-from-sanity.gif"/>]()

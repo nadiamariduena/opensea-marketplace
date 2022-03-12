@@ -79,10 +79,7 @@ and than we are going to return the
 
   //
   //5
-  const fetchCollectionData = async (
-    sanityClient = client,
-    collectionId = collectionId
-  ) => {
+  const fetchCollectionData = async (sanityClient = client) => {
     const query = `*[_type == "marketItems" && contractAddress == "${collectionId}" ] {
       "imageUrl": profileImage.asset->url,
       "bannerImageUrl": bannerImage.asset->url,
@@ -97,7 +94,7 @@ and than we are going to return the
     //
     //
     const collectionData = await sanityClient.fetch(query)
-
+    console.log(collectionData, '🔥')
     // the query returns 1 object inside of an array
     await setCollection(collectionData[0])
   }
