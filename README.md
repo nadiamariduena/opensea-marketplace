@@ -137,10 +137,13 @@ const style = {
 
 - Here we will need to add the **provider coming from the web3** , than we will need to add the **collectionId**
 
+<br>
+
 ```javascript
-import React from 'react'
+import React, { useEffect, useState, useMemo } from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
+
 
 //
 import { useWeb3 } from '@3rdweb/hooks' ✋
@@ -179,3 +182,20 @@ const [listings, setListings] = useState([])
 <br>
 
 [<img src="./z_img-read/states-to-get-access-thecollection.gif"/>]()
+
+<br>
+<br>
+
+# 🌈 [INFURA ](https://infura.io/)
+
+- "Our suite of high availability **APIs** and Developer Tools provide quick, reliable access to the Ethereum and **IPFS networks** so you can focus on building and scaling next generation software."
+
+<br>
+
+### We are going to need to open an account with INFURA
+
+> ##### "Another service that you will use is INFURA which is an API that runs ethereum clients for you."
+
+  <br>
+
+#### 🐖 its not easy to run ethereum client, so infura is very useful when you want to send a transaction to mainnet

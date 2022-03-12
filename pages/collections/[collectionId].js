@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { useEffect, useState, useMemo } from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 
 //
 import { useWeb3 } from '@3rdweb/hooks'
-import { client } from '../../lib/sanityClient'
+
 //
 //
 
@@ -14,7 +14,6 @@ const collection = () => {
   //
   const { provider } = useWeb3()
   const { collectionId } = router.query
-  //
   const [collection, setCollection] = useState({})
   const [nfts, setNfts] = useState([])
   const [listings, setListings] = useState([])
