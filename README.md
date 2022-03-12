@@ -584,8 +584,10 @@ useEffect(() => {
 ```
 
 <br>
+<br>
+<br>
 
-### 🔴 We are going to get some errors, to prevent them , add the following:
+#### 🔴 We are going to get some errors, to prevent them , add the following:
 
 <br>
 
@@ -598,11 +600,27 @@ import { ThirdwebSDK } from '@3rdweb/sdk'
 
 <br>
 
-#### Install the sdk
+## Install the sdk
+
+##### [Getting Started with thirdweb SDK](https://portal.thirdweb.com/learn)
+
+##### [Some guidance on using our SDK: Frontend vs Backend](https://portal.thirdweb.com/guides/sdk-guide)
+
+<br>
+
+#### why do we need this sdk?
+
+> Here is a typical use case. You have an app (or are building one) and you want users to claim an nft. You have everything set up and just want that button. In this case you integrate our sdk in the frontend. The user triggers a transaction and the frontend(or client side) interacts with the blockchain. <br> <br> > **Example:** I click on the claim button and the client side makes sure my wallet pops up and I authorise the transaction.
+
+<br>
+
+- install it
 
 ```javascript
 npm i @3rdweb/sdk
 ```
+
+<br>
 
 #### This is what you should have:
 
@@ -621,7 +639,7 @@ npm i @3rdweb/sdk
 
 <br>
 
-#### With this we shouldnt have any other issues (for now)
+#### With this we shouldn't have any other issues (for now)
 
 - Lets test it 🔥
 
@@ -636,13 +654,13 @@ npm i @3rdweb/sdk
 
 <br>
 
-- 🔴 remove the collectionId, as it was giving me an empty array
+- 🔴 remove the **collectionId**, as it was giving me an empty array
 
 ```javascript
 // before
 const fetchCollectionData = async (
   sanityClient = client,
-  collectionId = collectionId ✋
+  collectionId = collectionId 🔴
 ) => {
 
 // after
@@ -787,6 +805,8 @@ export default collection
 <br>
 <br>
 
+# 🌈
+
 ### Frontend part
 
 #### Now that we are accessing the data, all we need to build is the front end to show the data
@@ -827,7 +847,9 @@ import NFTCard from '../../components/NFTCard'
 <br>
 <br>
 
-- if the **collection?.bannerImageUrl** if the banner Img exist then show it **collection.bannerImageUrl** else show just a placeholder **https://via.placeholder.com/200**
+- if the **collection?.bannerImageUrl** in other words...if the **banner Img** exist then show it..as **collection.bannerImageUrl** , else / if if it dont exist, show just a placeholder **https://via.placeholder.com/200**
+
+<br>
 
 ```javascript
 <div className="overflow-hidden">
