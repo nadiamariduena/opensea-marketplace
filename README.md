@@ -1308,3 +1308,9 @@ return (
       </div>
       <div className={style.details}>hello details</div>
 ```
+
+<br>
+
+- this is what we have now with the image and the descript/details container
+
+[<img src="./z_img-read/nft-card-path.gif"/>]()
