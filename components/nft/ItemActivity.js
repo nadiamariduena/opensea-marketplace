@@ -26,9 +26,12 @@ const ItemActivity = () => {
   //
   return (
     <div className={style.wrapper}>
+      {/*  */}
       <div className={style.title} onClick={() => setToggle(!toggle)}>
+        {/*  */}
         <div className={style.titleLeft}>
           <span className={style.titleIcon}>
+            {/* icon  */}
             <CgArrowsExchangeV />
           </span>
           Item Activity
@@ -38,7 +41,14 @@ const ItemActivity = () => {
         
         */}
         <div className={style.titleRight}>
-          {/* the arrows up and down */}
+          {/* the arrows up and down 
+          
+          
+             if the toggle is true/it will show icon UP (its default state), otherwise
+          show toggle down because it will be false /as the user would have clicked
+          so to open
+          */}
+
           {toggle ? <AiOutlineUp /> : <AiOutlineDown />}
         </div>
       </div>
@@ -46,7 +56,7 @@ const ItemActivity = () => {
       {/* 
       
       
-      If toogle down then show this below:
+      If toogle is down/false because the user opened it,  show the below:
       
       */}
       {toggle && (

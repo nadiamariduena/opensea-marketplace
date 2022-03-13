@@ -558,6 +558,15 @@ export default GeneralDetails
 
 #### 🥭 Here we will add a state, this state will handle the changes of the toggle
 
+- by default the toggle is set to **true**
+
+```javascript
+const [toggle, setToggle] = useState(true)
+```
+
+<br>
+<br>
+
 - There are to elements that I had to hide so to avoid errors
 
 <br>
@@ -607,7 +616,14 @@ const ItemActivity = () => {
         
         */}
         <div className={style.titleRight}>
-          {/* the arrows up and down */}
+          {/* the arrows up and down 
+          
+          
+             if the toggle is true/it will show icon UP (its default state), otherwise
+          show toggle down because it will be false /as the user would have clicked
+          so to open
+          */}
+
           {toggle ? <AiOutlineUp /> : <AiOutlineDown />}
         </div>
       </div>
@@ -615,7 +631,7 @@ const ItemActivity = () => {
       {/* 
       
       
-      If toogle down then show this below:
+      If toogle is down/false because the user opened it,  show the below:
       
       */}
       {toggle && (
@@ -641,12 +657,6 @@ const ItemActivity = () => {
             <div className={`${style.tableHeaderElement} flex-[2]`}>Date</div>
           </div>
 
-          {/* 
-          
-          
-          
-          
-          */}
           {/* {dummyEvents.map((event, id) => (
             <EventItem key={id} event={event} />
           ))} */}
@@ -657,4 +667,62 @@ const ItemActivity = () => {
 }
 
 export default ItemActivity
+```
+
+<br>
+
+<br>
+
+### Create the dummyEvents
+
+- they are related to this
+
+```javascript
+{
+  /* {dummyEvents.map((event, id) => (
+            <EventItem key={id} event={event} />
+          ))} */
+}
+```
+
+<br>
+<br>
+
+#### Go to the Root
+
+- Create a new **folder** and call it **static**, like so:
+
+> **opensea-marketplace/static/**
+
+- **Inside the static folder**, create a new file and call it **dummyEvents.js** , this file is like a json file containing fake data(this data will show a sales activity of the nft / **how many sales during a period of time**)
+
+<br>
+
+```javascript
+export const dummyEvents = [
+  {
+    price: 17,
+    from: '0xQazi',
+    to: '0xDavid',
+    date: '4 months ago',
+  },
+  {
+    price: 17,
+    from: '0xQazi',
+    to: '0xDavid',
+    date: '4 months ago',
+  },
+  {
+    price: 17,
+    from: '0xQazi',
+    to: '0xDavid',
+    date: '4 months ago',
+  },
+  {
+    price: 17,
+    from: '0xQazi',
+    to: '0xDavid',
+    date: '4 months ago',
+  },
+]
 ```
