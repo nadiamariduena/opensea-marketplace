@@ -46,19 +46,14 @@ and 2 if our listing matches our **nft item**.
   
   */
   useEffect(() => {
-    //1
-    for (const listing of listings) {
-      //2
-      if (listing.asset.id === nftItem.id) {
-        //3
-        setIsListed(true)
-        //4
-        setPrice(listing.buyoutCurrencyValuePerToken.displayValue)
-        //5
-        break
-      }
+    const listing = listings.find((listing) => listing.asset.id === nftItem.id)
+    // this will return a true or false,
+    if (Boolean(listing)) {
+      //
+      setIsListed(true)
+      setPrice(listing.buyoutCurrencyValuePerToken.displayValue)
     }
-  }, [nftItem, listings])
+  }, [listings, nftItem])
   //
   return (
     /*
