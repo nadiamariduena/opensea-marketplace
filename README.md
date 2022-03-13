@@ -332,3 +332,9 @@ return sdk.getNFTModule('0xB4D9B62983AD4027533905D1DbFcEE732Bc0CEC7')
 <br>
 
 - So I **closed** Visual studio instead of **killing all the servers**, then i open it again and started the server again to see if it would run in **PORT 3000** like before when i started using the images and **BINGO** the banner and the avatar are visible again
+
+<br>
+
+##### 👍 The image inside the nfts page is working too...so all the 2 images with issues are working now(the banner /avatar from collection page, the image when you click on the card of the nft to be redirected to the nft individual page)
+
+[<img src="./z_img-read/image-issue-because-of-port-solved.gif"/>]()
