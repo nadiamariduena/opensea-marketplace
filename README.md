@@ -315,3 +315,20 @@ return sdk.getNFTModule('0xB4D9B62983AD4027533905D1DbFcEE732Bc0CEC7')
 <br>
 
 [<img src="./z_img-read/error-NFTImage.gif"/>]()
+
+<br>
+<br>
+
+### After I corrected this issue I noticed that the banner and the image avatar of the user (the one in the center top of the page) wasnt showing...
+
+- I thought that i might did something wrong with the code, so i tried to find an error in the type etc..but everythings was okay, eventually i ended up deleting the 2 last component i added to see if the **image issue** persisted, but nothing.
+
+#### 🌈 Some how I noticed
+
+- That the server wasn't running in **localhost 3000** and that it was running in **3001** now, because apparently the 3000 was being using somewhere else, in the beginning i didnt think it will be an issue but then i thought..
+
+#### then I thought, what if the images dont show because of the server running in another port?
+
+<br>
+
+- So I **closed** Visual studio instead of **killing all the servers**, then i open it again and started the server again to see if it would run in **PORT 3000** like before when i started using the images and **BINGO** the banner and the avatar are visible again
