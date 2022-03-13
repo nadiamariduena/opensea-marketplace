@@ -2,7 +2,7 @@ import { CgArrowsExchangeV } from 'react-icons/cg'
 import { AiOutlineDown, AiOutlineUp } from 'react-icons/ai'
 import { useState } from 'react'
 import { dummyEvents } from '../../static/dummyEvents'
-// import EventItem from './itemActivity/EventItem'
+import EventItem from './itemActivity/EventItem'
 
 const style = {
   wrapper: `w-full mt-8 border border-[#151b22] rounded-xl bg-[#303339] overflow-hidden`,
@@ -88,9 +88,9 @@ const ItemActivity = () => {
           
           
           */}
-          {/* {dummyEvents.map((event, id) => (
+          {dummyEvents.map((event, id) => (
             <EventItem key={id} event={event} />
-          ))} */}
+          ))}
         </div>
       )}
     </div>

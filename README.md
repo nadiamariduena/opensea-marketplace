@@ -748,13 +748,62 @@ export const dummyEvents = [
 - inside the **EventItem.js** add the following
 
 ```javascript
+import { BsFillCartFill } from 'react-icons/bs'
 
+const style = {
+  eventItem: `flex px-4 py-5 font-medium`,
+  event: `flex items-center`,
+  eventIcon: `mr-2 text-xl`,
+  eventName: `text-lg font-semibold`,
+  eventPrice: `flex items-center`,
+  eventPriceValue: `text-lg`,
+  ethLogo: `h-5 mr-2`,
+  accent: `text-[#2081e2]`,
+}
+
+const EventItem = ({ event }) => {
+  return (
+
+  )
+}
+
+export default EventItem
 ```
 
 <br>
+
+# 🍓
+
+#### The <u>event</u> here below
+
+```javascript
+const EventItem = ({ event }) => {
+  return (
+
+  )
+}
+```
+
+#### is coming from here
+
+- Here below we are **.mapping** over the **dummyEvents**, this dummyEvents then get converted into the **event**, the event now carries the data from the **dummyEvents**, this event will be then passed as props like so **event={event}**, to the **EventItem.js**
+
+```javascript
+{
+  dummyEvents.map((event, id) => <EventItem key={id} event={event} />)
+}
+```
+
 <br>
 
 ---
 
 <br>
+
+### Lets continue now in the <u>EventItem.js</u>
+
+- Now that we have have the props making the connection
+
 <br>
+
+[<img src="./z_img-read/item-activity.gif"/>]()
