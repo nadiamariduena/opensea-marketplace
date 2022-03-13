@@ -19,6 +19,30 @@ const Nft = () => {
   const [listings, setListings] = useState([])
   const router = useRouter()
 
+  /*
+
+
+
+
+
+1
+- the dependency is going to be the provider, 
+so if the provider **dont exist** return it, 
+otherwise e are going to create a thirdweb 
+sdk: **new ThirdwebSDK**, to get our signer 
+**provider.getSigner()**, and we are going 
+to use our API key: **h ttps://eth-rinkeby...**, 
+and than we are going to return the
+ NFT MODULE: **sdk.getNFTModule(collectionId)**
+
+
+
+
+*/
+
+  //
+  //               Grab the nfts
+  //
   const nftModule = useMemo(() => {
     if (!provider) return
 
@@ -28,7 +52,15 @@ const Nft = () => {
     )
     return sdk.getNFTModule('0xB4D9B62983AD4027533905D1DbFcEE732Bc0CEC7')
   }, [provider])
+  /*
 
+
+
+
+               
+
+
+*/
   // get all NFTs in the collection
   useEffect(() => {
     if (!nftModule) return
@@ -40,7 +72,17 @@ const Nft = () => {
       setSelectedNft(selectedNftItem)
     })()
   }, [nftModule])
+  /*
 
+
+                    
+                    
+                    Grab the market collection 
+
+
+
+
+*/
   const marketPlaceModule = useMemo(() => {
     if (!provider) return
 
@@ -53,14 +95,32 @@ const Nft = () => {
       '0xCdA1334a27C272c7cFF02bc2CC1563b60e540402'
     )
   }, [provider])
+  /*
 
+
+
+
+
+
+
+*/
+  // get all listings in the market collection
+  //
   useEffect(() => {
     if (!marketPlaceModule) return
     ;(async () => {
       setListings(await marketPlaceModule.getAllListings())
     })()
   }, [marketPlaceModule])
+  /*
 
+
+
+
+
+
+
+*/
   return (
     <div>
       <Header />
