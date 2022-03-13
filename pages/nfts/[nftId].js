@@ -36,7 +36,8 @@ and than we are going to return the
  NFT MODULE: **sdk.getNFTModule(collectionId)**
 
 
-
+the following 2 functions work together, 
+the same for the other 2 (market...)
 
 */
 
@@ -55,13 +56,8 @@ and than we are going to return the
   /*
 
 
-
-
-               
-
-
 */
-  // get all NFTs in the collection
+  // get all NFTs from above that are in the collection
   useEffect(() => {
     if (!nftModule) return
     ;(async () => {
@@ -96,10 +92,6 @@ and than we are going to return the
     )
   }, [provider])
   /*
-
-
-
-
 
 
 
