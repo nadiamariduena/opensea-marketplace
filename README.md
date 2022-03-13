@@ -234,13 +234,15 @@ and than we are going to return the
 
 # 🖼️
 
-##### 1:42:39 []()
+##### 1:42:39 [Build OpenSea Blockchain Web 3.0 App with Next.js | Sanity.io | thirdweb](https://youtu.be/x3eRXeMB-4k)
 
-### Before going into the frontend, create another component
+### Before going into the frontend for the [nftid].js, create another component
 
-- this will take care of the **image**
+- this will take care of the **image** , that we will be passing through props
 
-#### Create a new folder
+<br>
+
+### Create a new folder
 
 - Inside the **components folder**, create the **nft folder**
 
@@ -248,7 +250,7 @@ and than we are going to return the
 
 <br>
 
-### Add the following
+### Then Add the following
 
 ```javascript
 import { IoMdSnow } from 'react-icons/io'
@@ -286,7 +288,7 @@ export default NFTImage
 <br>
 <br>
 
-#### 🔴 At this point you will have an error
+#### 🔴 At this point you will have an error:
 
 ```javascript
 Unhandled Runtime Error
@@ -300,6 +302,8 @@ Error: cannot estimate gas; transaction may fail or may require manual gas limit
 - I confused the key of the **sdk.getNFTModule( )** inside the **[nftid].js**, i added the market key to both instead of having a different key for each like you see in the gif
 
 <br>
+
+- you need the id key from the nft collection and the id key for the market
 
 ```javascript
 //
@@ -319,9 +323,11 @@ return sdk.getNFTModule('0xB4D9B62983AD4027533905D1DbFcEE732Bc0CEC7')
 <br>
 <br>
 
-### After I corrected this issue I noticed that the banner and the image avatar of the user (the one in the center top of the page) wasnt showing...
+### After I corrected this issue, I noticed that the banner and the image avatar of the user (the one in the center top of the page) didnt show...
 
 - I thought that i might did something wrong with the code, so i tried to find an error in the type etc..but everythings was okay, eventually i ended up deleting the 2 last component i added to see if the **image issue** persisted, but nothing.
+
+<br>
 
 #### 🌈 Some how I noticed
 
@@ -338,3 +344,195 @@ return sdk.getNFTModule('0xB4D9B62983AD4027533905D1DbFcEE732Bc0CEC7')
 ##### 👍 The image inside the nfts page is working too...so all the 2 images with issues are working now(the banner /avatar from collection page, the image when you click on the card of the nft to be redirected to the nft individual page)
 
 [<img src="./z_img-read/image-issue-because-of-port-solved.gif"/>]()
+
+<br>
+<br>
+<br>
+
+---
+
+<br>
+<br>
+<br>
+
+### Import the following components inside the [nftId].js
+
+```javascript
+import GeneralDetails from '../../components/nft/GeneralDetails'
+import ItemActivity from '../../components/nft/ItemActivity'
+import Purchase from '../../components/nft/Purchase'
+```
+
+<br>
+<br>
+
+# 🍨
+
+### Create the <u>GeneralDetails</u>
+
+- Inside the **components/nft/** , create the **GeneralDetails**
+
+<br>
+
+##### Import the <u>GeneralDetails</u> to the <u>[nftId].js</u> so that we can see what we will do:
+
+```javascript
+import NFTImage from '../../components/nft/NFTImage'
+import GeneralDetails from '../../components/nft/GeneralDetails'
+
+/*
+            General details
+
+*/}
+  <div className={style.detailsContainer}>
+  <GeneralDetails selectedNft={selectedNft} />
+  </div>
+
+```
+
+<br>
+
+<br>
+
+#### Back to GeneralDetails
+
+- Import the styles and the icons
+
+```javascript
+import { AiFillHeart } from 'react-icons/ai'
+import { MdRefresh } from 'react-icons/md'
+import { RiShareBoxLine } from 'react-icons/ri'
+import { FiMoreVertical } from 'react-icons/fi'
+import { GiShare } from 'react-icons/gi'
+
+const style = {
+  wrapper: `flex`,
+  infoContainer: `h-36 flex flex-col flex-1 justify-between mb-6`,
+  accent: `text-[#2081e2]`,
+  nftTitle: `text-3xl font-extrabold`,
+  otherInfo: `flex`,
+  ownedBy: `text-[#8a939b] mr-4`,
+  likes: `flex items-center text-[#8a939b]`,
+  likeIcon: `mr-1`,
+  actionButtonsContainer: `w-44`,
+  actionButtons: `flex container justify-between text-[1.4rem] border-2 rounded-lg`,
+  actionButton: `my-2`,
+  divider: `border-r-2`,
+}
+```
+
+<br>
+<br>
+
+#### Now import the data through the props <u>({ selectedNft }) </u>
+
+- this props is coming from here: **pages/nfts/[nftId].js**
+
+<br>
+
+```javascript
+const GeneralDetails = ({ selectedNft }) => {
+  return (
+
+  )
+}
+
+export default GeneralDetails
+```
+
+### This is the rest of the code, nothing incredible , just grabing the data and using it
+
+- i added this border, so that you can see where we are
+
+> **border-l-[5px] border-white**
+
+<br>
+
+[<img src="./z_img-read/generaldetails-page.gif"/>]()
+
+```javascript
+import { AiFillHeart } from 'react-icons/ai'
+import { MdRefresh } from 'react-icons/md'
+import { RiShareBoxLine } from 'react-icons/ri'
+import { FiMoreVertical } from 'react-icons/fi'
+import { GiShare } from 'react-icons/gi'
+
+const style = {
+  wrapper: `flex  border-l-[5px] border-white`,
+  infoContainer: `h-36 flex flex-col flex-1 justify-between mb-6   `,
+  accent: `text-[#2081e2]`,
+  nftTitle: `text-3xl font-extrabold`,
+  otherInfo: `flex`,
+  ownedBy: `text-[#8a939b] mr-4`,
+  likes: `flex items-center text-[#8a939b]`,
+  likeIcon: `mr-1`,
+  actionButtonsContainer: `w-44`,
+  actionButtons: `flex container justify-between text-[1.4rem] border-2 rounded-lg`,
+  actionButton: `my-2`,
+  divider: `border-r-2`,
+}
+
+const GeneralDetails = ({ selectedNft }) => {
+  return (
+    <div className={style.wrapper}>
+      <div className={style.infoContainer}>
+        <div className={style.accent}>Bored Ape Yacht Club</div>
+        {/* 
+        
+        */}
+        <div className={style.nftTitle}>{selectedNft?.name}</div>
+        {/* ---- */}
+        <div className={style.otherInfo}>
+          <div className={style.ownedBy}>
+            {/* 
+              
+              owned by ...needs to be changed to our value
+              */}
+            Owned by <span className={style.accent}>e88vault</span>
+          </div>
+          <div className={style.likes}>
+            <AiFillHeart className={style.likeIcon} /> 2.3K favorites
+          </div>
+        </div>
+      </div>{' '}
+      {/* ---- 
+      
+      
+      buttons share
+      
+      
+      */}
+      <div className={style.actionButtonsContainer}>
+        <div className={style.actionButtons}>
+          <div className={`${style.actionButton} ml-2`}>
+            <MdRefresh />
+          </div>
+          <div className={style.divider} />
+          <div className={style.actionButton}>
+            <RiShareBoxLine />
+          </div>
+          <div className={style.divider} />
+          <div className={style.actionButton}>
+            <GiShare />
+          </div>
+          <div className={style.divider} />
+          <div className={`${style.actionButton} mr-2`}>
+            <FiMoreVertical />
+          </div>
+        </div>
+      </div>
+      {/* ---- */}
+    </div>
+  )
+}
+
+export default GeneralDetails
+```
+
+<br>
+<br>
+
+---
+
+<br>
+<br>

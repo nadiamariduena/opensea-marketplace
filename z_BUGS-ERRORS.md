@@ -224,3 +224,7 @@ export default Nft
 
 <br>
 <br>
+
+##### 👍 The image inside the nfts page is working too...so all the 2 images with issues are working now(the banner /avatar from collection page, the image when you click on the card of the nft to be redirected to the nft individual page)
+
+[<img src="./z_img-read/image-issue-because-of-port-solved.gif"/>]()
