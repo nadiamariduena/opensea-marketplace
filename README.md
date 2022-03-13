@@ -377,6 +377,9 @@ import Purchase from '../../components/nft/Purchase'
 ##### Import the <u>GeneralDetails</u> to the <u>[nftId].js</u> so that we can see what we will do:
 
 ```javascript
+//
+// [nftId].js
+//
 import NFTImage from '../../components/nft/NFTImage'
 import GeneralDetails from '../../components/nft/GeneralDetails'
 
@@ -440,15 +443,15 @@ const GeneralDetails = ({ selectedNft }) => {
 export default GeneralDetails
 ```
 
-### This is the rest of the code, nothing incredible , just grabing the data and using it
+<br>
 
-- i added this border, so that you can see where we are
+#### This is the rest of the code, nothing incredible , just grabbing the data and using it
+
+- I added this border, so that you can see where we are
 
 > **border-l-[5px] border-white**
 
 <br>
-
-[<img src="./z_img-read/generaldetails-page.gif"/>]()
 
 ```javascript
 import { AiFillHeart } from 'react-icons/ai'
@@ -528,6 +531,13 @@ const GeneralDetails = ({ selectedNft }) => {
 
 export default GeneralDetails
 ```
+
+<br>
+
+[<img src="./z_img-read/generaldetails-page.gif"/>]()
+
+<br>
+
 
 <br>
 <br>
