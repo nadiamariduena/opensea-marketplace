@@ -554,7 +554,23 @@ export default GeneralDetails
 
 <br>
 
-##### Import the <u>ItemActivity.js</u> to the <u>[nftId].js</u> so that we can see what we will do:
+##### Import the <u>ItemActivity.js</u> inside the <u>[nftId].js</u> ,so that we can see what we will do:
+
+```javascript
+  {/*
+
+            General details
+
+            */}
+            <div className={style.detailsContainer}>
+        ✋      <GeneralDetails selectedNft={selectedNft} />
+            </div>
+          </div>
+       ✋   <ItemActivity />
+
+```
+
+<br>
 
 #### 🥭 Here we will add a state, this state will handle the changes of the toggle
 
@@ -800,10 +816,83 @@ const EventItem = ({ event }) => {
 
 <br>
 
-### Lets continue now in the <u>EventItem.js</u>
+### Lets continue now in the <u>itemActivity.js</u>
 
-- Now that we have have the props making the connection
+- the result
 
 <br>
 
-[<img src="./z_img-read/item-activity.gif"/>]()
+[<img src="./z_img-read/evenitem-done.gif"/>]()
+
+<br>
+<br>
+
+---
+
+<br>
+<br>
+
+# 🍨
+
+### Create the <u>Purchase.js</u>
+
+- Inside the **components/nft/** , create the **Purchase.js**
+
+<br>
+
+##### Import the <u>Purchase.js</u> inside the <u>[nftId].js</u> ,so that we can see what we will do:
+
+- Pass the props, so that we can use them inside the **Purchase.js**
+
+```javascript
+<div className={style.detailsContainer}>
+  <GeneralDetails selectedNft={selectedNft} />
+  ✋ <Purchase
+    isListed={router.query.isListed}
+    selectedNft={selectedNft}
+    listings={listings}
+    marketPlaceModule={marketPlaceModule}
+  />
+</div>
+```
+
+<br>
+
+#### import the following
+
+```javascript
+import { useEffect, useState } from 'react'
+
+import { HiTag } from 'react-icons/hi'
+import { IoMdWallet } from 'react-icons/io'
+import toast, { Toaster } from 'react-hot-toast' //for notifications
+
+const style = {
+  button: `mr-8 flex items-center py-2 px-12 rounded-lg cursor-pointer`,
+
+  //py-2  is padding: https://tailwindcss.com/docs/padding
+  //border-radius  rounded-lg
+  buttonIcon: `text-xl`,
+  buttonText: `ml-2 text-lg font-semibold`,
+}
+```
+
+<br>
+
+### Use the props
+
+##### To not confuse things, lets start with this:
+
+```javascript
+//
+//
+//
+
+const MakeOffer = ({ isListed, selectedNft, listings, marketPlaceModule }) => {
+  return (
+    <div className="flex h-20 w-full items-center rounded-lg border border-[#151c22] bg-[#303339] px-12"></div>
+  )
+}
+
+export default MakeOffer
+```
