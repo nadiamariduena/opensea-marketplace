@@ -1403,10 +1403,16 @@ info is going to contain the price value but if its not listed the nft is not go
 
 ### So this is how the listed and unlisted look
 
-- I will add more 3 unlisted nfts' because it looks ugly like that
+- ⚠️ I will add 3 more **unlisted & listed nfts** because it looks ugly like that
 
 <br>
 
 [<img src="./z_img-read/unlisted-nft-example.webp"/>]()
 
 <br>
+
+<br>
+
+### unlisted & listed nfts
+
+[<img src="./z_img-read/listed-and-unlisted.gif"/>]()
