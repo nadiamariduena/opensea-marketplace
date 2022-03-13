@@ -70,7 +70,29 @@
 
 <br>
 
-
-#
-
 #### Here we will be creating the page related to the nft (the user will be redirected there, once the user clicks on the card)
+
+<br>
+
+### Go to the pages folder and create a new folder , call it 'nfts'
+
+- inside the nfts folder we will have a file called: **[nftid].js**
+
+- import the following:
+
+```javascript
+import React from 'react'
+import Header from '../../components/Header'
+import { useEffect, useMemo, useState } from 'react'
+import { useWeb3 } from '@3rdweb/hooks'
+import { ThirdwebSDK } from '@3rdweb/sdk'
+import { useRouter } from 'next/router'
+
+const Nft = () => {
+  return <div style={{ color: 'white' }}>hello nft page</div>
+}
+
+export default Nft
+```
+
+### now test it
