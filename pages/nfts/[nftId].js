@@ -5,7 +5,12 @@ import { ThirdwebSDK } from '@3rdweb/sdk'
 import { useRouter } from 'next/router'
 import NFTImage from '../../components/nft/NFTImage'
 import GeneralDetails from '../../components/nft/GeneralDetails'
+import ItemActivity from '../../components/nft/ItemActivity'
 
+//
+//
+//
+//
 const style = {
   wrapper: `flex flex-col items-center container-lg text-[#e5e8eb]`,
   container: `container p-6`,
@@ -133,7 +138,7 @@ the same for the other 2 (market...)
               <GeneralDetails selectedNft={selectedNft} />
             </div>
           </div>
-          {/* <ItemActivity /> */}
+          <ItemActivity />
         </div>
       </div>
     </div>

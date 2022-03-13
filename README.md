@@ -538,7 +538,6 @@ export default GeneralDetails
 
 <br>
 
-
 <br>
 <br>
 
@@ -546,3 +545,13 @@ export default GeneralDetails
 
 <br>
 <br>
+
+# 🍨
+
+### Create the <u>ItemActivity.js</u>
+
+- Inside the **components/nft/** , create the **ItemActivity.js**
+
+<br>
+
+##### Import the <u>ItemActivity.js</u> to the <u>[nftId].js</u> so that we can see what we will do:
