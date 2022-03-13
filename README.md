@@ -675,7 +675,7 @@ export default ItemActivity
 
 ### Create the dummyEvents
 
-- they are related to this
+##### To continue with the ItemActivity.js, we will need the dummy events related to the code below:
 
 ```javascript
 {
@@ -688,13 +688,15 @@ export default ItemActivity
 <br>
 <br>
 
-#### Go to the Root
+#### Dummy events
 
-- Create a new **folder** and call it **static**, like so:
+- Go to the **Root**: Create a new **folder** and call it **static**, like so:
 
 > **opensea-marketplace/static/**
 
-- **Inside the static folder**, create a new file and call it **dummyEvents.js** , this file is like a json file containing fake data(this data will show a sales activity of the nft / **how many sales during a period of time**)
+<br>
+
+- **Inside the static folder**, create a new file and call it **dummyEvents.js** ✋, this file is like a json file containing fake data(this data will show a sales activity of the nft / **how many sales during a period of time**)
 
 <br>
 
@@ -726,3 +728,33 @@ export const dummyEvents = [
   },
 ]
 ```
+
+<br>
+
+## One last thing before we use it inside the <u>ItemActivity.js</u>
+
+<br>
+
+### Create the <u>EventItem.js</u>
+
+- This will be inside the map. so you need it, otherwise you will have an error.
+
+<br>
+
+> **components**/nft/itemActivity/**EventItem.js**
+
+<br>
+
+- inside the **EventItem.js** add the following
+
+```javascript
+
+```
+
+<br>
+<br>
+
+---
+
+<br>
+<br>
