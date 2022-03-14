@@ -1,5 +1,6 @@
 [![Puppycat_pose](https://emoji.gg/assets/emoji/8285-puppycat-pose.png)](https://emoji.gg/emoji/8285-puppycat-pose)
-<!-- 
+
+<!--
 # <a href="https://emoji.gg/emoji/1385-metamask"><img src="https://emoji.gg/assets/emoji/1385-metamask.png" width="64px" height="64px" alt="metamask"></a> -->
 
 ## Build OpenSea Blockchain Web 3.0 App with Next.js | Sanity.io | thirdweb
@@ -103,11 +104,7 @@ Big thanks to **[CleverProgrammers](https://www.youtube.com/c/CleverProgrammer/v
 
 <!--  ok cool now how can we do it for several markets and not just one -->
 
-<br>
-<br>
-<br>
-
-### See More:
+#### See More:
 
 <details>
 <summary>click to unfold</summary>
