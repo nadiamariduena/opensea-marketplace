@@ -1,4 +1,4 @@
-<!-- [![Puppycat_pose](https://emoji.gg/assets/emoji/8285-puppycat-pose.png)](https://emoji.gg/emoji/8285-puppycat-pose)
+[![Puppycat_pose](https://emoji.gg/assets/emoji/8285-puppycat-pose.png)](https://emoji.gg/emoji/8285-puppycat-pose)
 
 ## Build OpenSea Blockchain Web 3.0 App with Next.js | Sanity.io | thirdweb
 
@@ -73,7 +73,6 @@ Big thanks to **[CleverProgrammers](https://www.youtube.com/c/CleverProgrammer/v
 <details>
 <summary>click to unfold</summary>
 
-
 ###### [1-yarn-default-setup](https://github.com/nadiamariduena/opensea-marketplace/tree/1-yarn-default-setup)
 
 ###### [2.sanityio-installation](https://github.com/nadiamariduena/opensea-marketplace/tree/2.sanityio-installation)
@@ -90,52 +89,14 @@ Big thanks to **[CleverProgrammers](https://www.youtube.com/c/CleverProgrammer/v
 
 ###### [8-nft-individualpath-imagevisibility-issue-purchase-button](https://github.com/nadiamariduena/opensea-marketplace/tree/8-nft-individualpath-imagevisibility-issue-purchase-button)
 
+##### [9-deployment-cors-sanity](https://github.com/nadiamariduena/opensea-marketplace/tree/9-deployment-cors-sanity)
+
 <br>
 
 </details>
 
 <br>
 
-  ok cool now how can we do it for several markets and not just one -->
-
-<br>
-
-# Deployment
-
-<br>
-
-- Once you deploy it on [vercel](https://vercel.com/)
-
-<br>
-
-- grab the url of the site you just deployed
-
-<br>
-
-- go to [sanity](https://www.sanity.io/manage/personal/) , go to management and there click on API
-
-<br>
-
-- once there paste the url inside the **CORS**, dont replace the localhost,just add one more cors **(add credentials allowed)**, click save.
-
-<br>
-
-[<img src="./z_img-read/deployment1_CORS.gif"/>]()
-
-  <br>
-
-- Now go to the deployed app, and **connect** to the site (with **your metamask**, I advice you to use another test account just to have different outcomes) again (**because you are not longer in localhost**).
-
-##### what happens if you dont add the url inside the Cors
-
-- well.. you cannot see the banner img and other stuff, just notice how as soon as i add the url in the cors, the images show again
-
-<br>
-
-[<img src="./z_img-read/deployment2_CORS.gif"/>]()
-
-<br>
-
-- **try to buy a NFT**, but keep your thirdweb open (in another screen), so that you can see **how it disappears when you purchase something**.
+<!--  ok cool now how can we do it for several markets and not just one -->
 
 <br>
