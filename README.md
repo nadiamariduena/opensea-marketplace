@@ -61,8 +61,6 @@
 
 > **yarn dev** to start server on 3000 and in **sanity**, to start server sanity on 3333 🌵 but log into: cd studio then type **sanity start**
 
-ok cool now how can we do it for several markets and not just one
-
 <br>
 
 ---
