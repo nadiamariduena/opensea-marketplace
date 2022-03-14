@@ -2,6 +2,8 @@
 
 ## Build OpenSea Blockchain Web 3.0 App with Next.js | Sanity.io | thirdweb
 
+<br>
+
 #### Credits:
 
 <details>
@@ -36,11 +38,12 @@ Big thanks to **[CleverProgrammers](https://www.youtube.com/c/CleverProgrammer/v
 
 ---
 
-# Login:
+#### Login:
 
 <details>
-<summary>click to unfold</summary>  
-   
+<summary>click to unfold</summary>
+
+   <br>
     
 #### Login in Metamask : [metamask](https://metamask.io/)
 
@@ -62,8 +65,31 @@ Big thanks to **[CleverProgrammers](https://www.youtube.com/c/CleverProgrammer/v
    
 </details>
 
----
+<br>
+<br>
+
+#### Branches
+
+<details>
+<summary>click to unfold</summary>  
+   
+    
+###### [1-yarn-default-setup](https://github.com/nadiamariduena/opensea-marketplace/tree/1-yarn-default-setup)
+
+###### [2.sanityio-installation](https://github.com/nadiamariduena/opensea-marketplace/tree/2.sanityio-installation)
+
+###### [3-metamask-thirweb-connection-market-nft-setup-sanity-last-details](https://github.com/nadiamariduena/opensea-marketplace/tree/3-metamask-thirweb-connection-market-nft-setup-sanity-last-details)
+
+###### [4-header-tailwing-routing](https://github.com/nadiamariduena/opensea-marketplace/tree/4-header-tailwing-routing)
+
+###### [5-hero-component](https://github.com/nadiamariduena/opensea-marketplace/tree/5-hero-component)
+
+###### [6-sanity-auth-and-notification-with-toaster](https://github.com/nadiamariduena/opensea-marketplace/tree/6-sanity-auth-and-notification-with-toaster)
+
+###### [7-collection-page-nftmodule-marketplace-listing-alchemy-dynamic.creating-user-sanity](https://github.com/nadiamariduena/opensea-marketplace/tree/7-collection-page-nftmodule-marketplace-listing-alchemy-dynamic.creating-user-sanity)
+
+###### [8-nft-individualpath-imagevisibility-issue-purchase-button](https://github.com/nadiamariduena/opensea-marketplace/tree/8-nft-individualpath-imagevisibility-issue-purchase-button)
 
 <br>
-<br>
-<br>
+   
+</details>
