@@ -11,24 +11,48 @@ const style = {
 }
 
 const MakeOffer = ({ isListed, selectedNft, listings, marketPlaceModule }) => {
+  //
+  //
   const [selectedMarketNft, setSelectedMarketNft] = useState()
   const [enableButton, setEnableButton] = useState(false)
 
+  /*
+
+
+
+*/
   useEffect(() => {
     if (!listings || isListed === 'false') return
     ;(async () => {
+      // 2 then set that to the selected market nft
       setSelectedMarketNft(
+        //1 look for the marketnft and if the market nft matches the selected nft, if it does...
         listings.find((marketNft) => marketNft.asset?.id === selectedNft.id)
       )
     })()
   }, [selectedNft, listings, isListed])
-
+  /*
+  
+  
+  
+  
+  
+  */
   useEffect(() => {
+    //3 then if none of the selectedMarketNft are set , finish it/return
     if (!selectedMarketNft || !selectedNft) return
-
+    //4 it will be enabled if there is nothing selected
     setEnableButton(true)
+    //
+    //5 then we are going to track the nft states
   }, [selectedMarketNft, selectedNft])
+  /*
 
+
+                purchase notification
+
+
+*/
   const confirmPurchase = (toastHandler = toast) =>
     toastHandler.success(`Purchase successful!`, {
       style: {
@@ -36,20 +60,26 @@ const MakeOffer = ({ isListed, selectedNft, listings, marketPlaceModule }) => {
         color: '#fff',
       },
     })
+  /*
 
+
+                  here below:
+                THE BUY FUNCTION
+
+
+*/
+  //3 args:
+  //listingId = selectedMarketNft.id,
+  //quantityDesired = 1,
+  //module = marketPlaceModule
+  //
   const buyItem = async (
     listingId = selectedMarketNft.id,
     quantityDesired = 1,
     module = marketPlaceModule
   ) => {
-    console.log(listingId, quantityDesired, module, 'david')
-    // yo RAZA lets goooo!!!
-    //yo Qazi, ok
-    // sure okay about to run it...
-    // just clicked buy now...
-    // still error
-    // where can i see the contract address of the marketplace module
-    // in [nftId.js]
+    // console.log(listingId, quantityDesired, module, 'rainbow')
+
     await module
       .buyoutDirectListing({
         listingId: listingId,
@@ -63,6 +93,7 @@ const MakeOffer = ({ isListed, selectedNft, listings, marketPlaceModule }) => {
   return (
     <div className="flex h-20 w-full items-center rounded-lg border border-[#151c22] bg-[#303339] px-12">
       <Toaster position="bottom-left" reverseOrder={false} />
+      {/*  if listed, you will have this 2 buttons  */}
       {isListed === 'true' ? (
         <>
           <div
@@ -82,6 +113,7 @@ const MakeOffer = ({ isListed, selectedNft, listings, marketPlaceModule }) => {
           </div>
         </>
       ) : (
+        //if they are not listed you will only have this button
         <div className={`${style.button} bg-[#2081e2] hover:bg-[#42a0ff]`}>
           <IoMdWallet className={style.buttonIcon} />
           <div className={style.buttonText}>List Item</div>
