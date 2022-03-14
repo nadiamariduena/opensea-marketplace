@@ -39,10 +39,6 @@ Big thanks to **[CleverProgrammers](https://www.youtube.com/c/CleverProgrammer/v
 
 <br>
 
----
-
-<br>
-
 #### Login:
 
 <details>
@@ -123,6 +119,7 @@ Big thanks to **[CleverProgrammers](https://www.youtube.com/c/CleverProgrammer/v
 
 </details>
 
+<br>
 <br>
 
 [<img src="./z_img-read/preview-image.webp"/>]()
