@@ -39,6 +39,12 @@
 
 <br>
 
+##### fake eth
+
+[faucets.chain](https://faucets.chain.link/rinkeby)
+
+<br>
+
 ---
 
 <br>
@@ -1076,13 +1082,46 @@ return (
 
 <br>
 
-#### Lets think about what is making the button work:
+# 🌈
+
+## Lets think about: ... what is making the button work?:
+
+- we will **ignore** the function related to the notification, I will just focus on the payment
+
+<br>
+<br>
 
 ```javascript
 //
+//
+// The logic behind the purchase function
+//
+//3 args:
+//listingId = selectedMarketNft.id,
+//quantityDesired = 1,
+//module = marketPlaceModule
+//
+const buyItem = async (
+  listingId = selectedMarketNft.id,
+  quantityDesired = 1,
+  module = marketPlaceModule
+) => {
+ 🔥
+  await module
+    .buyoutDirectListing({
+      listingId: listingId,
+      quantityDesired: quantityDesired,
+    })
+    .catch((error) => console.error(error))
+
+  confirmPurchase()
+}
+
+//
+//
 //      THE BUTTON
 //
-<div
+;<div
   onClick={() => {
     enableButton ? buyItem(selectedMarketNft.id, 1) : null
   }}
