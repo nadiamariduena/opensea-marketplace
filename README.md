@@ -845,20 +845,45 @@ const EventItem = ({ event }) => {
 - Pass the props, so that we can use them inside the **Purchase.js**
 
 ```javascript
-<div className={style.detailsContainer}>
-  <GeneralDetails selectedNft={selectedNft} />
-  ✋ <Purchase
-    isListed={router.query.isListed}
-    selectedNft={selectedNft}
-    listings={listings}
-    marketPlaceModule={marketPlaceModule}
-  />
-</div>
+import Purchase from '../../components/nft/Purchase'
+
+/*
+
+
+
+
+
+
+*/
+return (
+  <div>
+    <Header />
+    <div className={style.wrapper}>
+      <div className={style.container}>
+        <div className={style.topContent}>
+          <div className={style.nftImgContainer}>
+            <NFTImage selectedNft={selectedNft} />
+          </div>
+          <div className={style.detailsContainer}>
+            <GeneralDetails selectedNft={selectedNft} />
+            👍 <Purchase
+              isListed={router.query.isListed}
+              selectedNft={selectedNft}
+              listings={listings}
+              marketPlaceModule={marketPlaceModule}
+            />
+          </div>
+        </div>
+        <ItemActivity />
+      </div>
+    </div>
+  </div>
+)
 ```
 
 <br>
 
-#### import the following
+#### Now Import the following
 
 ```javascript
 import { useEffect, useState } from 'react'
@@ -879,20 +904,123 @@ const style = {
 
 <br>
 
-### Use the props
+#### Use the props
+
+- Use the props coming from the **[nftId].js**
+
+<br>
 
 ##### To not confuse things, lets start with this:
 
 ```javascript
-//
-//
-//
-
 const MakeOffer = ({ isListed, selectedNft, listings, marketPlaceModule }) => {
   return (
-    <div className="flex h-20 w-full items-center rounded-lg border border-[#151c22] bg-[#303339] px-12"></div>
+    <div className="flex h-20 w-full items-center rounded-lg border border-[#151c22] bg-[#303339] px-12">
+      purchase
+    </div>
   )
 }
 
 export default MakeOffer
 ```
+
+<br>
+<br>
+
+### The states
+
+```javascript
+const [selectedMarketNft, setSelectedMarketNft] = useState()
+const [enableButton, setEnableButton] = useState(false)
+```
+
+<br>
+
+#### The useEffect and other functions
+
+- here we will handle the access to the items that are listed and the ones that aren't listed, once we got that, we will create the function related to the notification **(after succesfully purchasing an nft)**, then we will create the payment function and the **calling(**) of the **confirmPurchase**
+
+<br>
+
+```javascript
+/*
+
+
+
+*/
+useEffect(() => {
+  if (!listings || isListed === 'false') return
+  ;(async () => {
+    // 2 then set that to the selected market nft
+    setSelectedMarketNft(
+      //1 look for the marketnft and if the market nft matches the selected nft, if it does...
+      listings.find((marketNft) => marketNft.asset?.id === selectedNft.id)
+    )
+  })()
+}, [selectedNft, listings, isListed])
+/*
+
+
+
+
+
+*/
+useEffect(() => {
+  //3 then if none of the selectedMarketNft are set , finish it/return
+  if (!selectedMarketNft || !selectedNft) return
+  //4 it will be enabled if there is nothing selected
+  setEnableButton(true)
+  //
+  //5 then we are going to track the nft states
+}, [selectedMarketNft, selectedNft])
+/*
+
+
+
+
+
+*/
+const confirmPurchase = (toastHandler = toast) =>
+  toastHandler.success(`Purchase successful!`, {
+    //6 We will have a purchase NOTIFICATION 🔥
+    style: {
+      background: '#04111d',
+      color: '#fff',
+    },
+  })
+/*
+
+
+                  here below:
+                THE BUY FUNCTION
+
+
+*/
+const buyItem = async (
+  //
+  //7
+  listingId = selectedMarketNft.id,
+  //quantity by default will be 1, because you dont buy in pairs
+  quantityDesired = 1,
+  module = marketPlaceModule
+  //
+) => {
+  console.log(listingId, quantityDesired, module, 'david')
+
+  await module
+    //8 here we are using 3web buyout direct listings method
+    //that will allows you to easily buy an nft
+    .buyoutDirectListing({
+      listingId: listingId,
+      quantityDesired: quantityDesired,
+    })
+    //9
+    .catch((error) => console.error(error))
+  //10 call the toast function for the notification
+  confirmPurchase()
+}
+```
+
+<br>
+
+[<img src="./z_img-read/result-purchase-succesful.gif"/>]()

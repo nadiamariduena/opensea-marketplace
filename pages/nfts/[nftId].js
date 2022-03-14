@@ -6,7 +6,7 @@ import { useRouter } from 'next/router'
 import NFTImage from '../../components/nft/NFTImage'
 import GeneralDetails from '../../components/nft/GeneralDetails'
 import ItemActivity from '../../components/nft/ItemActivity'
-
+import Purchase from '../../components/nft/Purchase'
 //
 //
 //
@@ -125,17 +125,17 @@ the same for the other 2 (market...)
       <div className={style.wrapper}>
         <div className={style.container}>
           <div className={style.topContent}>
-            {/* -------- */}
             <div className={style.nftImgContainer}>
               <NFTImage selectedNft={selectedNft} />
             </div>
-            {/* 
-            
-            General details
-            
-            */}
             <div className={style.detailsContainer}>
               <GeneralDetails selectedNft={selectedNft} />
+              <Purchase
+                isListed={router.query.isListed}
+                selectedNft={selectedNft}
+                listings={listings}
+                marketPlaceModule={marketPlaceModule}
+              />
             </div>
           </div>
           <ItemActivity />
