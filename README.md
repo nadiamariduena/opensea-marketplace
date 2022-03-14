@@ -139,3 +139,13 @@ Big thanks to **[CleverProgrammers](https://www.youtube.com/c/CleverProgrammer/v
 - **try to buy a NFT**, but keep your thirdweb open (in another screen), so that you can see **how it disappears when you purchase something**.
 
 <br>
+
+#### Check this [site](https://rinkeby.etherscan.io/tx/0xada67836ce9f881911018db8e270c65130a5b4117172a850c137439c8a8988a7) , it will show you the link you just bought:
+
+<br>
+
+- click on the image to see more details about the transaction
+
+<br>
+
+[<img src="./z_img-read/etherscanner.gif"/>](https://rinkeby.etherscan.io/tx/0xada67836ce9f881911018db8e270c65130a5b4117172a850c137439c8a8988a7)
