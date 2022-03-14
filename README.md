@@ -107,12 +107,25 @@ Big thanks to **[CleverProgrammers](https://www.youtube.com/c/CleverProgrammer/v
 <br>
 <br>
 
-[<img src="./z_img-read/preview-image.webp"/>]()
+### See More:
 
-#### auth
+<details>
+<summary>click to unfold</summary>
+
+<br>
+
+#### Auth
 
 [<img src="./z_img-read/preview-0.gif"/>]()
 
-#### payment
+#### Payment
 
 [<img src="./z_img-read/preview-site.gif"/>]()
+
+<br>
+
+</details>
+
+<br>
+
+[<img src="./z_img-read/preview-image.webp"/>]()
