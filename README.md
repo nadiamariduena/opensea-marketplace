@@ -16,23 +16,21 @@ Big thanks to **[CleverProgrammers](https://www.youtube.com/c/CleverProgrammer/v
 
 ##### check it out: [video tutorial](https://youtu.be/x3eRXeMB-4k)
 
- <br>
-
 ##### Check this other tutorial:
 
 ##### [Build your own NFT marketplace like OpenSea clone with solidity,openzeppelin and polygon (SUBSCRIBE)](https://youtu.be/7Q5E6RvLlUw)
 
 <br>
-   
-</details>
-
-<br>
-
----
 
 # Docs
 
 > **Blockchain development:** Smart Contracts, security, IDE, Truffle & hardhat, Etherscan, Dapp | **NFT:** ERC's ... [all here](./z_articles.md) ✋
+
+<br>
+
+<br>
+   
+</details>
 
 <br>
 
