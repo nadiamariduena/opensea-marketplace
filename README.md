@@ -118,9 +118,21 @@ Big thanks to **[CleverProgrammers](https://www.youtube.com/c/CleverProgrammer/v
 
 - once there paste the url inside the **CORS**, dont replace the localhost,just add one more cors **(add credentials allowed)**, click save.
 
+<br>
+
+[<img src="./z_img-read/deployment1_CORS.gif"/>]()
+
   <br>
 
 - Now go to the deployed app, and **connect** to the site (with **your metamask**, I advice you to use another test account just to have different outcomes) again (**because you are not longer in localhost**).
+
+##### what happens if you dont add the url inside the Cors
+
+- well.. you cannot see the banner img and other stuff, just notice how as soon as i add the url in the cors, the images show again
+
+<br>
+
+[<img src="./z_img-read/deployment2_CORS.gif"/>]()
 
 <br>
 
