@@ -430,3 +430,25 @@ ERC1155 is a novel token standard that aims to take the best from previous stand
 - Higher trading volumes are considered more positive than lower trading volumes because they mean more liquidity and better order execution.
 
 #### [Volume of Trade](https://www.investopedia.com/terms/v/volumeoftrade.asp)
+
+<br>
+<br>
+
+---
+
+<br>
+<br>
+
+## Interesting articles & links:
+
+##### How to make money with NFT as a developer?
+
+[How to make money with NFT as a developer?](https://youtu.be/5_Wu_X4LnAw)
+
+<br>
+
+### NFT Marketplaces
+
+> NFT marketplace rankings and analysis. Find non-fungible token trading volumes, number of traders per NFT marketplace and more key metrics.
+
+[NFT Marketplaces](https://dappradar.com/nft/marketplaces) ✋
