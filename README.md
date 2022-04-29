@@ -69,7 +69,7 @@ Big thanks to **[CleverProgrammers](https://www.youtube.com/c/CleverProgrammer/v
 <br>
 <br>
 
-#### Branches
+#### Branches 🌈
 
 <details>
 <summary>click to unfold</summary>
