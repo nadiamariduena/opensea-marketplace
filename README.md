@@ -7,6 +7,10 @@
 
 <br>
 
+- 🌈 To test it you need to be logged with your metamask
+
+<br>
+
 #### ✋ Credits:
 
 <details>
